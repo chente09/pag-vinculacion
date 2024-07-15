@@ -505,3 +505,18 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+/*Lavado de manos style*/
+.motivational-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.motivational-item h3 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #17a2b8;
+}
+
+
