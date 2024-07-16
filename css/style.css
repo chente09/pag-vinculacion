@@ -32,6 +32,65 @@
     opacity: 1;
 }
 
+/* CARRUSEL INDEX */
+.carousel-container {
+    max-width: 800px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-indicators button {
+    background-color: #007bff; /* Color de los indicadores */
+    border-radius: 50%; /* Indicadores redondeados */
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators .active {
+    background-color: #0056b3; /* Color del indicador activo */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Bordes redondeados */
+    padding: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+/* TARRJETAS ACERCA DE NOSOTROS */
+.about-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.about-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+.about-section .btn-primary {
+    margin-top: 20px;
+}
 
 /*** Button ***/
 .btn {
