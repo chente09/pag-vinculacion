@@ -227,6 +227,10 @@ h6,
 /*** Header ***/
 .header-carousel::before,
 .header-carousel::after,
+.page-header-cf::before,
+.page-header-cf::after,
+.page-header-hd::before,
+.page-header-hd::after,
 .page-header::before,
 .page-header::after {
     position: absolute;
@@ -304,6 +308,16 @@ h6,
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-cf {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/consejeriaFam.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-hd {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/herramientasDidacticas.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -578,4 +592,78 @@ h6,
     color: #17a2b8;
 }
 
+/* Estilo general para la sección Información Clara */
+.info-clara-container {
+    background-color: #f0f8ff; /* Fondo de color claro para resaltar el contenido */
+    padding: 3rem 1.5rem; /* Espaciado generoso */
+    border-radius: 10px; /* Bordes redondeados */
+}
 
+.info-clara-heading h2 {
+    color: #007BFF; /* Color de texto llamativo */
+    font-family: 'Arial', sans-serif; /* Tipografía clara y legible */
+    font-weight: bold;
+}
+
+.info-clara-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espaciado entre columnas */
+}
+
+.info-clara-column {
+    flex: 1;
+    min-width: 300px; /* Ancho mínimo de las columnas */
+    max-width: 500px; /* Ancho máximo de las columnas */
+}
+
+.info-clara-image {
+    border: 4px solid #04aa6b; /* Borde llamativo alrededor de las imágenes */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para efectos de hover */
+}
+
+.info-clara-image:hover {
+    transform: scale(1.05); /* Aumento de tamaño en hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más prominente en hover */
+}
+
+.info-clara-text {
+    color: #333; /* Color de texto oscuro para buena legibilidad */
+    font-family: 'Arial', sans-serif; /* Tipografía clara y legible */
+    line-height: 1.6; /* Altura de línea para mejor lectura */
+}
+
+.info-clara-list {
+    list-style-type: disc;
+    margin-left: 1.5rem; /* Espaciado a la izquierda para la lista */
+}
+
+.info-clara-list li {
+    margin-bottom: 0.5rem; /* Espaciado entre los elementos de la lista */
+}
+/* Estilos para el contenedor de la imagen */
+.image-container, .la-importancia-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Redondea el contenedor de la imagen */
+    width: 100%; /* Ajusta el ancho del contenedor */
+    max-width: 300px; /* Tamaño máximo del contenedor */
+    height: auto; /* Altura automática basada en el ancho */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto de hover */
+    margin: auto; /* Centra el contenedor */
+}
+
+.image-container:hover, .la-importancia-image-container:hover {
+    transform: scale(1.05); /* Aumento de tamaño en hover */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más prominente en hover */
+}
+
+.image-container img, .la-importancia-image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Redondea la imagen */
+    transition: opacity 0.3s ease; /* Transición para la opacidad */
+}
