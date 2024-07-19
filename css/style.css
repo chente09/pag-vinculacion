@@ -306,6 +306,11 @@ h6,
     border-color: var(--primary);
 }
 
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 .page-header-cf {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/consejeriaFam.jpg) center center no-repeat;
     background-size: cover;
