@@ -227,6 +227,10 @@ h6,
 /*** Header ***/
 .header-carousel::before,
 .header-carousel::after,
+.page-header-cf::before,
+.page-header-cf::after,
+.page-header-hd::before,
+.page-header-hd::after,
 .page-header::before,
 .page-header::after {
     position: absolute;
@@ -304,6 +308,16 @@ h6,
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-cf {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/consejeriaFam.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-hd {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/herramientasDidacticas.png) center center no-repeat;
     background-size: cover;
 }
 
