@@ -111,67 +111,41 @@
         </div>
         <!-- Page Header End -->
 
-
-<!-- Contenido Interactivo Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row g-5 align-items-center">
-                        <!-- Video Section -->
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100">
-                                <h2 class="mb-4">Video: Pasos Correctos del Lavado de Manos 1</h2>
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" title="Lavado de Manos 1"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row g-5 align-items-center">
-                        <!-- Video Section -->
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100">
-                                <h2 class="mb-4">Video: Pasos Correctos del Lavado de Manos 2</h2>
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" title="Lavado de Manos 2"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row g-5 align-items-center">
-                        <!-- Video Section -->
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100">
-                                <h2 class="mb-4">Video: Pasos Correctos del Lavado de Manos 3</h2>
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID3" title="Lavado de Manos 3"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!--videos-->
+        <section class="video-info-section">
+            <div class="video-container">
+                <iframe id="video" src="https://www.youtube.com/embed/mqDEIMuQRRI?si=c0SWMyk1iwOZD0ac" frameborder="0"
+                    allowfullscreen></iframe>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="info-container">
+                <h2 id="video-title">Título del Video 1</h2>
+                <p id="video-description">Descripción breve del tema del video 1. Puedes explicar de qué trata el video
+                    y qué información se puede obtener al verlo.</p>
+            </div>
+        </section>
+
+        <div class="thumbnail-container">
+            <img src="thumbnail1.jpg" alt="Video 1"
+                onclick="changeVideo('mqDEIMuQRRI?si=c0SWMyk1iwOZD0ac', 'Título del Video 1', 'Descripción breve del tema del video 1. Puedes explicar de qué trata el video y qué información se puede obtener al verlo.')">
+            <img src="thumbnail2.jpg" alt="Video 2"
+                onclick="changeVideo('_bij40Mlws0?si=19B4-5LQQAPMQQwe', 'Título del Video 2', 'Descripción breve del tema del video 2. Puedes explicar de qué trata el video y qué información se puede obtener al verlo.')">
+            <img src="thumbnail3.jpg" alt="Video 3"
+                onclick="changeVideo('XsxpMMR8QX0?si=rS-VYH1nEtcaxfYz', 'Título del Video 3', 'Descripción breve del tema del video 3. Puedes explicar de qué trata el video y qué información se puede obtener al verlo.')">
+            <img src="thumbnail3.jpg" alt="Video 3"
+                onclick="changeVideo('Ua9uXbXmA_M?si=4VQrh_Z-TEvIE2d7', 'Título del Video 3', 'Descripción breve del tema del video 4. Puedes explicar de qué trata el video y qué información se puede obtener al verlo.')">
         </div>
-    </div>
-</div>
-<!-- Contenido Interactivo End -->
+
+        <script>
+            function changeVideo(videoId, title, description) {
+                document.getElementById('video').src = 'https://www.youtube.com/embed/' + videoId;
+                document.getElementById('video-title').innerText = title;
+                document.getElementById('video-description').innerText = description;
+            }
+        </script>
+        <!--videos-->
+
+
+
 
         <!-- Información Clara Start -->
         <div class="container-xxl py-5 info-clara-container">
@@ -235,86 +209,122 @@
             </div>
         </div>
         <!-- Información Clara End -->
-
-        <!-- La Importancia del Lavado de Manos Start -->
-        <div class="container-xxl py-5 la-importancia-container">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="h-100">
-                            <h2 class="mb-4">La importancia del Lavado de Manos</h2>
-                            <p class="mb-4" style="text-align: justify;">
-                                Lavarse las manos es la primera línea de defensa contra la propagación de enfermedades.
-                                Estos sencillos pasos son importantes para mantenerse saludable y prevenir la
-                                propagación de enfermedades. Lavarse las manos adecuadamente ayuda a eliminar gérmenes y
-                                bacterias que pueden causar enfermedades graves como la gripe, la tos y los resfriados.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="la-importancia-image-container">
-                            <a href="impLManos.html">
-                                <img src="img/manolimpias.jpg" alt="Manos Limpias" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- La Importancia del Lavado de Manos Start -->
+<div class="container-xxl py-5 la-importancia-container">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+          <div class="h-100">
+            <h2 class="mb-4">La importancia del Lavado de Manos</h2>
+            <p class="mb-4" style="text-align: justify;">
+              Lavarse las manos es la primera línea de defensa contra la propagación de enfermedades.
+              Estos sencillos pasos son importantes para mantenerse saludable y prevenir la
+              propagación de enfermedades. Lavarse las manos adecuadamente ayuda a eliminar gérmenes y
+              bacterias que pueden causar enfermedades graves como la gripe, la tos y los resfriados.
+            </p>
+          </div>
         </div>
-        <!-- La Importancia del Lavado de Manos End -->
-
-        <!-- Técnicas correctas Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="image-container">
-                            <a href="pagina_tecnicas.html">
-                                <img src="img/saludb.jpg" alt="Salud Bien Guardada" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="h-100">
-                            <h2 class="mb-4">Técnicas correctas del lavado de manos</h2>
-                            <p class="mb-4" style="text-align: justify;">
-                                Dominar las técnicas correctas del lavado de manos es fundamental para mantener la salud
-                                y prevenir la propagación de enfermedades. El lavado de manos adecuado no solo implica
-                                el uso de agua y jabón, sino también seguir una serie de pasos precisos, que garantizan
-                                la eliminación de gérmenes y bacterias.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/saludb.jpg" alt="">
             </div>
-        </div>
-        <!-- Técnicas Correctas End -->
-
-        <!-- Lavado de Manos en Contextos Específicos Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="h-100">
-                            <h2 class="mb-4">Lavado de manos en contextos específicos</h2>
-                            <p class="mb-4" style="text-align: justify;">
-                                El lavado de manos se debe adaptar a diferentes contextos, como antes de comer, después
-                                de usar el baño y en situaciones de atención médica. Este módulo explorará las
-                                variaciones en la técnica y frecuencia del lavado de manos según el contexto.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="image-container">
-                            <a href="pagina_contextos.html">
-                                <img src="img/guardianesalud.jpg" alt="Guardianes de la Salud" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-6 text-start" style="margin-top: -150px;">
+              <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/guardianesalud.jpg" alt="">
             </div>
+            <div class="col-6 text-end" style="margin-top: -150px;">
+              <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/saludb.jpg" alt="">
+            </div>
+          </div>
         </div>
-        <!-- Lavado de Manos en Contextos Específicos End -->
+      </div>
+    </div>
+  </div>
+  <!-- La Importancia del Lavado de Manos End -->
+  
+  <!-- Técnicas correctas Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+          <div class="image-container">
+            <a href="pagina_tecnicas.html">
+              <img src="img/saludb.jpg" alt="Salud Bien Guardada" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+          <div class="h-100">
+            <h2 class="mb-4">Técnicas correctas del lavado de manos</h2>
+            <p class="mb-4" style="text-align: justify;">
+              Dominar las técnicas correctas del lavado de manos es fundamental para mantener la salud
+              y prevenir la propagación de enfermedades. El lavado de manos adecuado no solo implica
+              el uso de agua y jabón, sino también seguir una serie de pasos precisos, que garantizan
+              la eliminación de gérmenes y bacterias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Técnicas Correctas End -->
+  
+  <!-- Lavado de Manos en Contextos Específicos Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+          <div class="h-100">
+            <h2 class="mb-4">Lavado de manos en contextos específicos</h2>
+            <p class="mb-4" style="text-align: justify;">
+              El lavado de manos se debe adaptar a diferentes contextos, como antes de comer, después
+              de usar el baño y en situaciones de atención médica. Este módulo explorará las
+              variaciones en la técnica y frecuencia del lavado de manos según el contexto.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+          <div class="image-container">
+            <a href="pagina_contextos.html">
+              <img src="img/guardianesalud.jpg" alt="Guardianes de la Salud" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Lavado de Manos en Contextos Específicos End -->
+
+        <!--Pasos-->
+        <section class="info-section">
+            <div class="steps-container">
+                <h2>Pasos para el Lavado de Manos</h2>
+                <ul>
+                    <li>Mójate las manos con agua corriente limpia.</li>
+                    <li>Aplica suficiente jabón para cubrir todas las superficies de las manos.</li>
+                    <li>Frótate las manos palma contra palma.</li>
+                    <li>Frótate la palma de la mano derecha contra el dorso de la mano izquierda entrelazando los dedos
+                        y viceversa.</li>
+                    <li>Frótate las palmas de las manos entrelazando los dedos.</li>
+                    <li>Frótate el dorso de los dedos de una mano con la palma de la mano opuesta agarrándote los dedos.
+                    </li>
+                    <li>Frótate con un movimiento de rotación el pulgar izquierdo atrapándolo con la palma de la mano
+                        derecha y viceversa.</li>
+                    <li>Frótate la punta de los dedos de la mano derecha contra la palma de la mano izquierda haciendo
+                        un movimiento de rotación y viceversa.</li>
+                    <li>Enjuágate las manos con agua corriente limpia.</li>
+                    <li>Sécate con una toalla limpia o al aire.</li>
+                </ul>
+            </div>
+
+            <div class="video-container">
+                <h2>Video de Lavado de Manos</h2>
+                <iframe src="https://www.youtube.com/embed/XsxpMMR8QX0?si=rS-VYH1nEtcaxfYz" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <!--Pasos-->
+
 
         <!-- Área de Recursos Descargables Start -->
         <div class="container-xxl py-5">
@@ -383,6 +393,53 @@
         </div>
         <!-- Área de Recursos Descargables End -->
 
+
+        <!--Cuestionario de higiene-->
+        <section class="quiz-section">
+            <h2>Prueba tus Conocimientos</h2>
+            <form id="quiz">
+                <label for="q1">¿Con qué frecuencia debes lavarte las manos?</label>
+                <select id="q1">
+                    <option>Antes de comer</option>
+                    <option>Después de usar el baño</option>
+                    <option>Ambos</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <script>
+            document.getElementById('quiz').addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Gracias por participar');
+            });
+        </script>
+        <!--Cuestionario de higiene-->
+
+        <!--Descargable-->
+        <section class="download-section">
+            <h2>Descarga de Documentos</h2>
+            <ul class="download-list">
+                <li><a href="path/to/document1.pdf" download="documento1.pdf">Descargar Documento 1</a></li>
+                <li><a href="path/to/document2.pdf" download="documento2.pdf">Descargar Documento 2</a></li>
+                <li><a href="path/to/document3.pdf" download="documento3.pdf">Descargar Documento 3</a></li>
+            </ul>
+        </section>
+        <!--Descargable-->
+
+        <!--Preguntas Frecuentes-->
+        <section class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Por qué es importante lavarse las manos?</summary>
+                <p>Lavarse las manos reduce la propagación de enfermedades.</p>
+            </details>
+            <details>
+                <summary>¿Cuánto tiempo debo lavar mis manos?</summary>
+                <p>Debes lavar tus manos al menos 20 segundos.</p>
+            </details>
+        </section>
+        <!--Preguntas Frecuentes-->
+
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
@@ -434,8 +491,10 @@
                         <h3 class="text-white mb-4">Comentarios</h3>
                         <p>Deja tus comentarios, envíanos tus recomendaciones por correo electrónico.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Escríbenos">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Escríbenos">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -444,10 +503,10 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Desarrolladores Vesp</a>, Derechos reservados. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Diseñado por: <a class="border-bottom" href="#">Estudiantes ITSQMET</a>
+                            &copy; <a class="border-bottom" href="#">Desarrolladores Vesp</a>, Derechos reservados.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Diseñado por: <a class="border-bottom" href="#">Estudiantes ITSQMET</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
