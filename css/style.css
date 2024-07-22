@@ -793,4 +793,35 @@ h6,
     object-fit: cover;
     border-radius: 0.5rem;
 }
-  /*Mezcla*/
+  /*actividad evaluadora*/
+
+  .evaluadora-container {
+    margin-top: 50px;
+}
+
+.evaluadora-bg {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.evaluadora-content {
+    height: 100%;
+}
+
+.evaluadora-iframe {
+    width: 100%;
+    height: 600px; /* Puedes ajustar la altura según tus necesidades */
+    border: none;
+}
+
+.evaluadora-image {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .evaluadora-image {
+        max-height: 250px;
+    }
+}
+
+/*fin actividad*/
