@@ -786,6 +786,11 @@ h6,
   }
   /*descargable*/
 
-  /*Mezcla*/
-
+  /*seccion impor*/
+  .img-fluid3s {
+    width: 100%;
+    height: 200px; /* Tamaño fijo para todas las imágenes */
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
   /*Mezcla*/
