@@ -111,106 +111,78 @@
         </div>
         <!-- Page Header End -->
 
+        <!--videos-->
+        <section class="video-info-section">
+            <div class="video-container">
+                <iframe id="video" src="https://www.youtube.com/embed/mqDEIMuQRRI?si=c0SWMyk1iwOZD0ac" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="info-container">
+                <h2 id="video-title">Introducción</h2>
+                <p id="video-description">Las manos limpias hacen girar al mundo</p>
+            </div>
+        </section>
 
-        <!-- Contenido Interactivo Start -->
+        <div class="thumbnail-container">
+            <img src="" alt="Introducción"
+                onclick="changeVideo('mqDEIMuQRRI?si=c0SWMyk1iwOZD0ac', 'Introducción', 'Las manos limpias hacen girar al mundo')">
+            <img src="" alt="Metodologia"
+                onclick="changeVideo('_bij40Mlws0?si=19B4-5LQQAPMQQwe', 'Metodologia', 'Manos lavadas, salud bien guardada')">
+            <img src="" alt="Recomendaciónss"
+                onclick="changeVideo('XsxpMMR8QX0?si=rS-VYH1nEtcaxfYz', 'Recomendaciones', 'Las manos limpias son guardianes de la salud')">
+        </div>
+
+        <script>
+            function changeVideo(videoId, title, description) {
+                document.getElementById('video').src = 'https://www.youtube.com/embed/' + videoId;
+                document.getElementById('video-title').innerText = title;
+                document.getElementById('video-description').innerText = description;
+            }
+        </script>
+        <!--videos-->
+
+
+        <!-- Call To Action Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="row g-5 align-items-center">
-                    <!-- Video Section -->
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="h-100">
-                            <h2 class="mb-4">Video: Pasos Correctos del Lavado de Manos</h2>
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Lavado de Manos"
-                                    allowfullscreen></iframe>
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/lavadomanosobj.jpg"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h2 class="mb-4">OBJETIVOS</h2>
+                                <p class="mb-4 " style="text-align: justify;">Brindar información sobre la importancia
+                                    del lavado de manos. </p>
+                                <p class="mb-4" style="text-align: justify;">Proporcionar instrucciones claras y
+                                    demostraciones sobre la técnica adecuada de lavado de manos, reconociendo la
+                                    importancia de cada paso para la eliminación de gérmenes.
+                                </p>
+                                <p class="mb-4" style="text-align: justify;">Resaltar los momentos clave en los que es
+                                    fundamental lavarse las manos, como antes de comer, después de ir al baño, después
+                                    de toser o estornudar, y después de tocar superficies sucias.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <!-- Game Section -->
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <p class="mb-4" style="text-align: justify;"> El lavado de manos es una forma importante de
-                            proteger la salud
-                            individual y colectiva cuando se
-                            realiza de forma correcta y constante. Impulsar esta sencilla práctica tendrá un
-                            impacto profundo y
-                            duradero en la prevención de enfermedades y la mejora de la salud pública en todo el
-                            mundo.</p>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- Contenido Interactivo End -->
 
-        <!-- Información Clara Start -->
-        <div class="container-xxl py-5 info-clara-container">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="info-clara-heading">
-                            <h2 class="mb-4">Informativo</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5 info-clara-content">
-                    <!-- Columna 1: Pasos del Lavado de Manos -->
-                    <div class="info-clara-column wow fadeIn" data-wow-delay="0.3s">
-                        <div class="h-100 text-center">
-                            <h3 class="mb-3">Pasos del Lavado de Manos</h3>
-                            <img class="img-fluid mb-3 rounded info-clara-image" src="img/pasos_lavado.jpg"
-                                alt="Pasos del Lavado de Manos">
-                            <p class="info-clara-text">
-                                Siga estos sencillos pasos para asegurarse de que sus manos estén limpias y libres de
-                                gérmenes:
-                            </p>
-                            <ol class="info-clara-list">
-                                <li>Moje sus manos con agua limpia.</li>
-                                <li>Aplique suficiente jabón para cubrir todas las superficies de sus manos.</li>
-                                <li>Frote las palmas entre sí.</li>
-                                <li>Frote la parte posterior de cada mano con la palma opuesta y entre los dedos.</li>
-                                <li>Frote entrelazando los dedos de ambas manos.</li>
-                                <li>Frote el dorso de los dedos contra la palma opuesta.</li>
-                                <li>Frote con un movimiento de rotación los pulgares de cada mano.</li>
-                                <li>Frote las puntas de los dedos contra la palma opuesta.</li>
-                                <li>Enjuague bien con agua.</li>
-                                <li>Seque con una toalla limpia o al aire.</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <!-- Columna 2: Datos Interesantes -->
-                    <div class="info-clara-column wow fadeIn" data-wow-delay="0.5s">
-                        <div class="h-100 text-center">
-                            <h3 class="mb-3">Datos Interesantes</h3>
-                            <img class="img-fluid mb-3 rounded info-clara-image" src="img/datos_interesantes.jpg"
-                                alt="Datos Interesantes sobre la Higiene de Manos">
-                            <p class="info-clara-text">
-                                La higiene de manos es crucial para la prevención de enfermedades. Aquí hay algunos
-                                datos interesantes:
-                            </p>
-                            <ul class="info-clara-list">
-                                <li>Lavarse las manos puede reducir las enfermedades diarreicas en un 30%.</li>
-                                <li>La higiene de manos adecuada puede reducir las enfermedades respiratorias en un 20%.
-                                </li>
-                                <li>Se estima que el 80% de las enfermedades infecciosas se transmiten a través del
-                                    contacto con las manos.</li>
-                                <li>El lavado de manos con jabón puede prevenir 1 de cada 3 enfermedades relacionadas
-                                    con el agua.</li>
-                                <li>La OMS recomienda lavarse las manos durante al menos 20 segundos para eliminar
-                                    eficazmente los gérmenes.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Información Clara End -->
+
+
 
         <!-- La Importancia del Lavado de Manos Start -->
-        <div class="container-xxl py-5 la-importancia-container">
+        <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                         <div class="h-100">
-                            <h2 class="mb-4">La importancia del Lavado de Manos</h2>
+                            <h2 class="mb-4">Importancia</h2>
                             <p class="mb-4" style="text-align: justify;">
                                 Lavarse las manos es la primera línea de defensa contra la propagación de enfermedades.
                                 Estos sencillos pasos son importantes para mantenerse saludable y prevenir la
@@ -219,10 +191,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="la-importancia-image-container">
-                            <a href="impLManos.html">
-                                <img src="img/manolimpias.jpg" alt="Manos Limpias" class="img-fluid">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="image-container">
+                            <a href="pagina_contextos.html">
+                                <img src="img/manolimpias.jpg" alt="Guardianes de la Salud" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -284,17 +256,18 @@
         </div>
         <!-- Lavado de Manos en Contextos Específicos End -->
 
+      
+
+
         <!-- Área de Recursos Descargables Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
                         <div class="h-100 text-center">
-                            <h2 class="mb-4">Área de Recursos Descargables</h2>
+                            <h2 class="mb-4"></h2>
                             <p class="mb-4" style="text-align: justify;">
-                                Ofrecemos una variedad de recursos descargables que incluyen pósters, infografías y
-                                folletos sobre el lavado de manos. Estos recursos están diseñados para educar y promover
-                                la importancia de la higiene de manos en diversos contextos.
+
                             </p>
                         </div>
                     </div>
@@ -303,25 +276,24 @@
                     <!-- Pósters -->
                     <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                         <div class="h-100 text-center">
-                            <h3 class="mb-3">Pósters</h3>
+                            <h3 class="mb-3">Introducción</h3>
                             <a href="posters.html">
-                                <img class="img-fluid mb-3 rounded" src="img/posters.jpg"
-                                    alt="Pósters sobre Lavado de Manos" style="object-fit: cover;">
+
                             </a>
                             <p style="text-align: justify;">
                                 Descargue pósters informativos sobre las técnicas y la importancia del lavado de manos
                                 para promover la higiene en su hogar, escuela o lugar de trabajo.
                             </p>
+                            
                             <a href="img/posters.zip" class="btn btn-primary">Descargar Pósters</a>
                         </div>
                     </div>
                     <!-- Infografías -->
                     <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                         <div class="h-100 text-center">
-                            <h3 class="mb-3">Infografías</h3>
+                            <h3 class="mb-3">Presentación</h3>
                             <a href="infografias.html">
-                                <img class="img-fluid mb-3 rounded" src="img/infografias.jpg"
-                                    alt="Infografías sobre Lavado de Manos" style="object-fit: cover;">
+
                             </a>
                             <p style="text-align: justify;">
                                 Explore nuestras infografías detalladas que explican los beneficios y pasos del lavado
@@ -333,10 +305,9 @@
                     <!-- Folletos -->
                     <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
                         <div class="h-100 text-center">
-                            <h3 class="mb-3">Folletos</h3>
+                            <h3 class="mb-3">Actividad Evaluadora</h3>
                             <a href="folletos.html">
-                                <img class="img-fluid mb-3 rounded" src="img/folletos.jpg"
-                                    alt="Folletos sobre Lavado de Manos" style="object-fit: cover;">
+
                             </a>
                             <p style="text-align: justify;">
                                 Descargue folletos educativos que brindan información esencial sobre el lavado de manos
@@ -350,6 +321,24 @@
             </div>
         </div>
         <!-- Área de Recursos Descargables End -->
+
+
+ 
+
+
+        <!--Preguntas Frecuentes-->
+        <section class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Por qué es importante lavarse las manos?</summary>
+                <p>Lavarse las manos reduce la propagación de enfermedades.</p>
+            </details>
+            <details>
+                <summary>¿Cuánto tiempo debo lavar mis manos?</summary>
+                <p>Debes lavar tus manos al menos 20 segundos.</p>
+            </details>
+        </section>
+        <!--Preguntas Frecuentes-->
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -402,8 +391,10 @@
                         <h3 class="text-white mb-4">Comentarios</h3>
                         <p>Deja tus comentarios, envíanos tus recomendaciones por correo electrónico.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Escríbenos">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Escríbenos">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -412,10 +403,10 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Desarrolladores Vesp</a>, Derechos reservados. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Diseñado por: <a class="border-bottom" href="#">Estudiantes ITSQMET</a>
+                            &copy; <a class="border-bottom" href="#">Desarrolladores Vesp</a>, Derechos reservados.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Diseñado por: <a class="border-bottom" href="#">Estudiantes ITSQMET</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">

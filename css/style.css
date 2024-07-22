@@ -613,3 +613,179 @@ h6,
     border-radius: 15px; /* Redondea la imagen */
     transition: opacity 0.3s ease; /* Transición para la opacidad */
 }
+
+
+
+/*Pb seccion Video*/
+.video-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .video-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+  }
+
+  .info-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .info-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .info-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .thumbnail-container img {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .thumbnail-container img:hover {
+    transform: scale(1.1);
+  }
+
+  /*seccion video*/
+
+/*Cuestionario*/
+
+.quiz-section {
+    text-align: center;
+    padding: 50px;
+  }
+  .quiz-section form {
+    display: inline-block;
+    text-align: left;
+  }
+  .quiz-section label, .quiz-section select {
+    display: block;
+    margin: 10px 0;
+  }
+/*Cuestionario*/
+
+  /*Preguntas Frecuentes*/
+  .faq-section {
+    padding: 50px;
+    background-color: #e0f7fa;
+  }
+  .faq-section details {
+    margin: 10px 0;
+  }
+  .faq-section summary {
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  .faq-section p {
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+  }
+  /*Preguntas frecuentes*/
+
+  /*Pasos*/
+  .info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  .steps-container, .video-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .steps-container h2, .video-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .steps-container ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  .steps-container ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .video-container iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+  }
+  /*Pasos*/
+
+  /*descargable*/
+  .download-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .download-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .download-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .download-list li {
+    margin-bottom: 10px;
+  }
+  .download-list a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+  .download-list a:hover {
+    color: #0056b3;
+  }
+  /*descargable*/
+
+  /*Mezcla*/
+
+  /*Mezcla*/
