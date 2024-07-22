@@ -32,7 +32,6 @@
     opacity: 1;
 }
 
-
 /*** Button ***/
 .btn {
     font-weight: 500;
@@ -216,6 +215,12 @@ h6,
     }
 }
 
+/***CARRUSEL****/
+
+.fixed-height {
+    height: 500px; /* Ajusta este valor según tus necesidades */
+    object-fit: cover; 
+}
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
