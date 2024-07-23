@@ -825,3 +825,51 @@ h6,
 }
 
 /*fin actividad*/
+
+/*Exploracion*/
+
+
+.text-center h1 {
+    color: #007bff; /* Color azul pastel para el título */
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.text-center p {
+    color: #6c757d; /* Color gris claro para el texto adicional */
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+.classes-item {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light {
+    background-color: #e9ecef; /* Fondo en gris muy claro */
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color azul pastel para el botón */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color azul oscuro en hover */
+    border-color: #00408b;
+}
+
+.text-center h5 {
+    color: #343a40; /* Color gris oscuro para los subtítulos */
+    font-size: 1.25rem;
+}
+
+.text-center .btn {
+    border-radius: 5px;
+}
+/*exploracion fin*/
