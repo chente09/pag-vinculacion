@@ -172,7 +172,19 @@ h6,
 .page-header-hd::before,
 .page-header-hd::after,
 .page-header::before,
-.page-header::after {
+.page-header::after,
+.page-header-vincu1::before,
+.page-header-vincu1::after,
+.page-header-vincu2::before,
+.page-header-vincu2::after,
+.page-header-hga::before,
+.page-header-hga::after,
+.page-header-hgal::before,
+.page-header-hgal::after,
+.page-header-hgali::before,
+.page-header-hgali::after,
+.page-header-hgalim::before,
+.page-header-hgalim::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -250,6 +262,40 @@ h6,
 .header-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
     border-color: var(--primary);
+}
+
+.page-header-vse {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/VincuSocial.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-vincu1 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/vincuSocial1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-vincu2 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/vincuSocial2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-hga {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/higieneAlim1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-hgal {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Impohali.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-hgali {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/higieHogar.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-hgalim {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/recusrsostegno.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 .page-header {
