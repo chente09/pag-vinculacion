@@ -171,6 +171,12 @@ h6,
 .page-header-cf::after,
 .page-header-hd::before,
 .page-header-hd::after,
+.page-header-mednc::before,
+.page-header-mednc::after,
+.page-header-mnc::before,
+.page-header-mnc::after,
+.page-header-mnc2::before,
+.page-header-mnc2::after,
 .page-header::before,
 .page-header::after {
     position: absolute;
@@ -302,6 +308,21 @@ h6,
 
 .page-header-hd {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/herramientasDidacticas.png) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-mednc {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/medioNaturalCultural.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-mnc {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Actividades12_24meses.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-mnc2 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Actividades24_36meses.jpg) center center no-repeat;
     background-size: cover;
 }
 

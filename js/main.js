@@ -79,3 +79,43 @@
     
 })(jQuery);
 
+
+
+/*carrusel*/
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.video-carousel');
+    const videos = document.querySelectorAll('.video-wrapper');
+    const totalVideos = videos.length;
+    let index = 0;
+
+    function showVideo(index) {
+        const offset = -index * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextVideo() {
+        index = (index + 1) % totalVideos;
+        showVideo(index);
+    }
+
+    function prevVideo() {
+        index = (index - 1 + totalVideos) % totalVideos;
+        showVideo(index);
+    }
+
+    // Agrega botones para controlar el carrusel
+    const controls = document.createElement('div');
+    controls.classList.add('carousel-controls');
+    controls.innerHTML = `
+        <button onclick="prevVideo()">&#10094;</button>
+        <button onclick="nextVideo()">&#10095;</button>
+    `;
+    document.body.appendChild(controls);
+
+    // Expose functions to global scope
+    window.nextVideo = nextVideo;
+    window.prevVideo = prevVideo;
+
+    // Mostrar el primer video
+    showVideo(index);
+});
