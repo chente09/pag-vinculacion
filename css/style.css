@@ -298,10 +298,6 @@ h6,
     background-size: cover;
 }
 
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/about-2.jpg) center center no-repeat;
-    background-size: cover;
-}
 
 .page-header-cf {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/consejeriaFam.jpg) center center no-repeat;
