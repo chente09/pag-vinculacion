@@ -907,6 +907,7 @@ h6,
 }
   /*Mezcla*/
 
+<<<<<<< HEAD
   /*pastel*/
   .pastel-background {
     background-color: #f0f8ff; /* Fondo pastel azul claro */
@@ -938,3 +939,45 @@ h6,
     }
 }
   /*fin pastel*/
+=======
+ /* Estilo para blockquote */
+ blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    font-size: 1.25em; /* Tamaño de letra más grande */
+    font-weight: bold; /* Negrita */
+    text-align: justify; /* Texto justificado */
+}
+
+/* Estilo para las citas */
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888;
+    font-style: normal;
+    font-size: 0.9em;
+    font-weight: normal; /* Normal para que el nombre del autor no esté en negrita */
+}
+
+/* Estilo para q */
+q {
+    quotes: "“" "”" "‘" "’"; /* Agrega comillas tipográficas */
+    font-style: italic;
+    color: #333;
+    font-size: 1.25em; /* Tamaño de letra más grande */
+    font-weight: bold; /* Negrita */
+    text-align: justify; /* Texto justificado */
+}
+
+/* Estilo para cite */
+cite {
+    font-weight: bold;
+    font-style: normal;
+    color: #555;
+    font-size: 1.25em; /* Tamaño de letra más grande */
+}
+>>>>>>> a75f92156abe6f4e620531fc5fc9fc04e7a5171e
