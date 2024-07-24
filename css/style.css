@@ -304,6 +304,14 @@ h6,
 .facility-item:hover .facility-icon {
     background-color: transparent; /* Mantener fondo transparente en hover */
 }
+/* Mision Vision */
+.square-img {
+    width: 75%;
+    height: auto;
+    aspect-ratio: 1/1; /* Ensures the image is square */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 0; /* Removes the rounded corners */
+}
 
 /* Fondos por página */
 
