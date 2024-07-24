@@ -32,7 +32,6 @@
     opacity: 1;
 }
 
-
 /*** Button ***/
 .btn {
     font-weight: 500;
@@ -172,6 +171,12 @@ h6,
 .page-header-cf::after,
 .page-header-hd::before,
 .page-header-hd::after,
+.page-header-mednc::before,
+.page-header-mednc::after,
+.page-header-mnc::before,
+.page-header-mnc::after,
+.page-header-mnc2::before,
+.page-header-mnc2::after,
 .page-header::before,
 .page-header::after {
     position: absolute;
@@ -216,6 +221,12 @@ h6,
     }
 }
 
+/***CARRUSEL****/
+
+.fixed-height {
+    height: 500px; /* Ajusta este valor según tus necesidades */
+    object-fit: cover; 
+}
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
@@ -247,8 +258,91 @@ h6,
     border-color: var(--primary);
 }
 
+/* Tarjetas Index */
+
+.facility-item {
+    background-color: #f8f9fa; /* Fondo claro para el estado normal */
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    max-height: 400px; /* Establece una altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.facility-item:hover {
+    background-color: var(--primary); /* Fondo oscuro para el estado hover */
+    color: var(--prueba2); /* Texto claro para el estado hover */
+}
+
+.facility-item .facility-text h3, 
+.facility-item .facility-text p {
+    color: #000000; /* Texto oscuro para el estado normal */
+    transition: color 0.3s;
+}
+
+.facility-item:hover .facility-text h3, 
+.facility-item:hover .facility-text p {
+    color: #ffffff; /* Texto claro para el estado hover */
+}
+
+.facility-icon {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.facility-icon.bg-info, .facility-icon.bg-success, .facility-icon.bg-warning {
+    background-color: transparent; /* Fondo transparente para el ícono */
+}
+
+.facility-icon.bg-info i, 
+.facility-icon.bg-success i, 
+.facility-icon.bg-warning i {
+    color: inherit; /* Heredar color del elemento padre */
+}
+
+.facility-item:hover .facility-icon {
+    background-color: transparent; /* Mantener fondo transparente en hover */
+}
+
+/* Fondos por página */
+
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Socialyemocional.jpg) center center no-repeat;
+    background-size: cover;
+}
+ 
+.page-header-vse {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Socialyemocional.jpg) center center no-repeat;
+    background-size: cover;
+}
+ 
+.page-header-vincu1 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/vincuSocial1.jpg) center center no-repeat;
+    background-size: cover;
+}
+ 
+.page-header-vincu2 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/vincuSocial2.jpg) center center no-repeat;
+    background-size: cover;
+}
+ 
+.page-header-hga {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/higieneAlim1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-hgal {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Impohali.jpg) center center no-repeat;
+    background-size: cover;
+}
+ 
+.page-header-hgali {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/higieHogar.jpg) center center no-repeat;
+    background-size: cover;
+}
+ 
+.page-header-hgalim {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/recusrsostegno.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -259,6 +353,21 @@ h6,
 
 .page-header-hd {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/herramientasDidacticas.png) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-mednc {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/medioNaturalCultural.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-mnc {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Actividades12_24meses.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-mnc2 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Actividades24_36meses.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -781,6 +890,11 @@ h6,
   }
   /*descargable*/
 
-  /*Mezcla*/
-
+  /*seccion impor*/
+  .img-fluid3s {
+    width: 100%;
+    height: 200px; /* Tamaño fijo para todas las imágenes */
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
   /*Mezcla*/
