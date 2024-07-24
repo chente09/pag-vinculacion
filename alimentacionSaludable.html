@@ -99,18 +99,39 @@
         </div>
         <!-- Page Header End -->
 
-        <section class="video-info-section bg-white">
-            <div class="video-container">
-                <h2 class="text-primary">Introducción:</h2>
-                <iframe id="video" src="https://www.youtube.com/embed/mqDEIMuQRRI?si=c0SWMyk1iwOZD0ac" frameborder="0"
-                    allowfullscreen></iframe>
+        <!-- Carrusel de Videos Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-16x9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/DimwlhuVKJc?si=VUcKqEnN2Bq05UOf"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/9fywVtJRW44?si=HcvInAPdCJaQ-5De"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </a>
+                </div>
             </div>
-            <div class="video-container">
-                <h2 class="text-primary">Metodología:</h2>
-                <iframe id="video" src="https://www.youtube.com/embed/9fywVtJRW44?si=HcvInAPdCJaQ-5De" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
-        </section>
+        </div>
+        <!-- Carrusel de Videos End -->
+
         <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h2 class="mb-4 text-center text-primary">“Tu cuerpo merece ser tratado con amor y respeto. Aliméntalo con 
                 nutrientes que lo fortalezcan y lo hagan brillar desde adentro hacia afuera”</h2>
@@ -121,7 +142,7 @@
                 <div class="col-lg-6 text-center text-lg-left">
                     <h1 class="mb-3 text-primary">¿Saludable?</h1>
                     <p class="mt-5">Alimentarse de manera saludable es fundamental para mantener una buena salud y bienestar. 
-                        Una dieta equilibrada, rica en nutrientes esenciales como frutas, verduras, cereales integrales, 
+                        Una dieta equilibrada, rica en nutrientes esenciales cómo frutas, verduras, cereales integrales, 
                         proteínas y grasas saludables puede prevenir enfermedades crónicas, mejorar la energía y el estado de ánimo, 
                         y contribuir a un estilo de vida más activo y pleno.</p>
                 </div>
@@ -143,7 +164,7 @@
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h2 class="mb-4 text-white">OBJETIVOS</h2>
+                                <h2 class="mb-4 text-white">Objetivos</h2>
                                 <p class="mb-4 text-white" style="text-align: justify;">Brindar información sobre la importancia de una alimentación balanceada y variada para el bienestar general de los niños.
                                 </p>
                                 <p class="mb-4 text-white" style="text-align: justify;">Fomentar el consumo de alimentos frescos y naturales en lugar de procesados.
@@ -156,11 +177,44 @@
                 </div>
             </div>
         </div>
+        
+        <div class="container-xxl py-5 mb-5">
+            <div class="container">
+                <div class="bg-primary rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h2 class="mb-4 text-white">Metodología</h2>
+                                <p class="mb-4 text-white" style="text-align: justify;"><strong>Técnicas de Instrucción Variadas: </strong> Emplea una combinación de conferencias, debates, ejercicios grupales y demostraciones.
+                                    Se adapta a diferentes tipos de aprendizaje y promover la participación activa de los participantes.  
+                                </p>
+                                <p class="mb-4 text-white" style="text-align: justify;"><strong>Exposición Teórica: </strong> Se utiliza presentaciones e infografías para explicar la importancia de la alimentación saludable. 
+                                    Asegura que los participantes tengan un entendimiento claro y profundo de los conceptos clave sobre alimentación saludable.
+                                </p>
+                                <p class="mb-4 text-white" style="text-align: justify;"><strong>Metodología mixta: </strong> Se combina elementos teóricos y prácticos. Los teóricos proporcionan el conocimiento necesario, para ser aplicados en su vida diaria. 
+                                    Se crea un espacio durante la realización del taller, donde los participantes puedan compartir sus experi   encias, recetas y recibir apoyo.
+                                </p>
+                                <p class="mb-4 text-white" style="text-align: justify;"><strong>Dinámico y Participativo: </strong> El taller enfatiza la participación y fomenta la interacción entre los participantes. 
+                                    Crea un ambiente de aprendizaje colaborativo y participativo que enriquezca el proceso educativo.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/alim_salu_metodologia.jpg" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         
         
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h2 class="text-center text-primary">Actividades</h2>
+            <hr>
         </div>
         <div class="video-info-section bg-white">
             <div class="video-container">
@@ -169,35 +223,133 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-        <!-- Facilities Start -->
-        <div class="container-xxl">
+        <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-4">
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="facility-item">
-                            <div class="facility-text bg-info">
-                                <h3 class="text-info mb-3"><a href="alimBalanceada.html" class="text-info" style="text-decoration: none;">La importancia de la alimentación balanceada.</a></h3>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <a href="alimBalanceada.html"><img class="img-fluid rounded-circle" src="img/LavadoManzanas9.jpg" alt=""></a>
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="alimBalanceada.html">La importancia de la alimentación balanceada</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="ms-3">
+
+                                            <small></small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div>
+                                            <h6 class="text-primary mb-1"></h6>
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h6 class="text-success mb-1"></h6>
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h6 class="text-warning mb-1"></h6>
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="facility-item">
-                            <div class="facility-text bg-info">
-                                <h3 class="text-info mb-3"><a href="alimBalanceada.html" class="text-info" style="text-decoration: none;">La higiene alimentaria en el hogar</a></h3>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <a href="alimBalanceada.html"><img class="img-fluid rounded-circle" src="img/LavadoManzanas8.jpg" alt=""></a>
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="alimBalanceada.html">La higiene alimentaria en el hogar</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+
+                                        <div class="ms-3">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h6 class="text-warning mb-1"></h6>
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="facility-item">
-                            <div class="facility-text bg-info">
-                                <h3 class="mb-3"><a href="alimBalanceada.html" class="text-info" style="text-decoration: none;">Recursos tecnologicos en la educacion alimentaria</a></h3>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="classes-item">
+                            <div class="rounded-circle w-75 mx-auto p-3">
+                                <a href="alimBalanceada.html"><img class="img-fluid rounded-circle" src="img/LavandoManzanas6.jpg" alt=""></a>
+                            </div>
+                            <div class="rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="alimBalanceada.html">Recursos tecnologicos en la educacion alimentaria</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+
+                                        <div class="ms-3">
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-4">
+
+
+                                </div>
+                            </div>
+                            <div class="col-4">
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Facilities End -->
+
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h2 class="text-center text-primary">Recomendaciones</h2>
+            <hr>
+        </div>
+        <div class="video-info-section bg-white">
+            <div class="video-container">
+                <h2 class="text-primary"></h2>
+                <iframe id="video" src="https://www.youtube.com/embed/sgu8b0F8tQI?si=VFZDzZdmY-ftsDsN" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
