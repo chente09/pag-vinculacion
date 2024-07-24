@@ -258,12 +258,65 @@ h6,
     border-color: var(--primary);
 }
 
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/about-2.jpg) center center no-repeat;
-    background-size: cover;
+/* Tarjetas Index */
+
+.facility-item {
+    background-color: #f8f9fa; /* Fondo claro para el estado normal */
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    max-height: 400px; /* Establece una altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.facility-item:hover {
+    background-color: var(--primary); /* Fondo oscuro para el estado hover */
+    color: var(--prueba2); /* Texto claro para el estado hover */
+}
+
+.facility-item .facility-text h3, 
+.facility-item .facility-text p {
+    color: #000000; /* Texto oscuro para el estado normal */
+    transition: color 0.3s;
+}
+
+.facility-item:hover .facility-text h3, 
+.facility-item:hover .facility-text p {
+    color: #ffffff; /* Texto claro para el estado hover */
+}
+
+.facility-icon {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.facility-icon.bg-info, .facility-icon.bg-success, .facility-icon.bg-warning {
+    background-color: transparent; /* Fondo transparente para el ícono */
+}
+
+.facility-icon.bg-info i, 
+.facility-icon.bg-success i, 
+.facility-icon.bg-warning i {
+    color: inherit; /* Heredar color del elemento padre */
+}
+
+.facility-item:hover .facility-icon {
+    background-color: transparent; /* Mantener fondo transparente en hover */
+}
+/* Mision Vision */
+.square-img {
+    width: 75%;
+    height: auto;
+    aspect-ratio: 1/1; /* Ensures the image is square */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 0; /* Removes the rounded corners */
+}
+
+/* Fondos por página */
+
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/about-2.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Socialyemocional.jpg) center center no-repeat;
     background-size: cover;
 }
  
