@@ -114,13 +114,17 @@
         </div>
         <!-- Page Header End -->
 
+
         <!-- Carrusel de Videos Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="container">
+            <div class="row g-0 justify-content-center">
+                <div id="videoCarousel" class="carousel slide" data-bs-interval="25000" data-bs-ride=""
+                    style="max-width: 800px;">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="ratio ratio-16x9">
+                        <div class="carousel-item active ">
+                            <div class="ratio ratio-16x9 "
+                                style="border: 15px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                                 <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/mqDEIMuQRRI?si=oG16mUTybixo-uuX"
                                     title="YouTube video player" frameborder="0"
@@ -128,8 +132,10 @@
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
+
                         <div class="carousel-item">
-                            <div class="ratio ratio-16x9">
+                            <div class="ratio ratio-16x9"
+                                style="border: 15px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                                 <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/_bij40Mlws0?si=nH0np5hjD7IlMacK"
                                     title="YouTube video player" frameborder="0"
@@ -138,57 +144,179 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="ratio ratio-16x9">
+                            <div class="ratio ratio-16x9"
+                                style="border: 15px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                                 <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/Ua9uXbXmA_M?si=b5JsVkbDs3S6kIVW"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                             </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-transparent rounded-circle"
+                            aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                     </a>
                     <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-transparent rounded-circle"
+                            aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                     </a>
+                    <ol class="carousel-indicators position-relative mt-3; padding:20px">
+                        <li data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active bg-primary"
+                            style="width: 25px; height: 25px; border-radius: 75%;">1</li>
+                        <li data-bs-target="#videoCarousel" data-bs-slide-to="1" class="bg-primary"
+                            style="width: 25px; height: 25px; border-radius: 75%;">2</li>
+                        <li data-bs-target="#videoCarousel" data-bs-slide-to="2" class="bg-primary"
+                            style="width: 25px; height: 25px; border-radius: 75%;">3</li>
+                    </ol>
                 </div>
             </div>
         </div>
         <!-- Carrusel de Videos End -->
 
 
-        <!-- Frase -->
-        <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h2 class="mb-4 text-center">"Lavar tus manos con agua y jabón no solo te mantiene limpio, sino que también
-                te protege de los gérmenes que podrían hacerte enfermar. ¡Cada vez que te lavas las manos, te estás
-                cuidando a ti y a tus amigos!"</h2>
+        <!-- Texto Largo Mejorado -->
+        <div>
+            <div class="container">
+                <div class="row g-2 justify-content-center">
+                    <blockquote style="text-align: justify;">
+                        "Lavar tus manos con agua y jabón no solo te mantiene limpio, sino que también
+                        te protege de los gérmenes que podrían hacerte enfermar. ¡Cada vez que te lavas las manos,
+                        te estás
+                        cuidando a ti y a tus amigos!"
+
+                    </blockquote>
+                </div>
+            </div>
         </div>
 
+        <!-- Texto Largo Mejorado End -->
 
-
-        <!-- Call To Action Start -->
+        <!-- New Section for Higiene Alimentaria -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/lavadomanosobj.jpg"
-                                    style="object-fit: cover;">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4" style="color: black;font-family: 'Arial';">Introducción</h1>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    ">
+                            <strong></strong> El lavado de manos es una forma
+                            importante
+                            de proteger la salud individual y colectiva cuando se realiza de forma correcta
+                            y
+                            constante. Impulsar esta sencilla práctica tendrá un impacto profundo y duradero
+                            en
+                            la prevención de enfermedades y la mejora de la salud en todo el mundo.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/lavadomanosobj.jpg"
+                                    alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End -->
+
+
+        <!-- New Section for Higiene Alimentaria -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/boywash.jpg" alt="">
+                            </div>
+                            <div class="col-6 text-start" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/lavadoManos.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-6 text-end" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/manolimpias.jpg"
+                                    alt="">
                             </div>
                         </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h2 class="mb-4">IMPORTANCIA</h2>
-                                <p class="mb-4 " style="text-align: justify;">El lavado de manos es una forma importante
-                                    de proteger la salud individual y colectiva cuando se realiza de forma correcta y
-                                    constante. Impulsar esta sencilla práctica tendrá un impacto profundo y duradero en
-                                    la prevención de enfermedades y la mejora de la salud en todo el mundo. </p>
-                            </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4" style="color: black;font-family: 'Arial'">Objetivos</h1>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+">
+                            <strong>•</strong>Brindar información sobre la importancia del lavado de manos.
+                        </p>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+
+">
+                            <strong>•</strong>Proporcionar instrucciones claras y demostraciones sobre la técnica
+                            adecuada de
+                            lavado de manos, reconociendo la importancia de cada paso para la eliminación de
+                            gérmenes.
+                        </p>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+
+">
+                            <strong>•</strong>Resaltar los momentos clave en los que es fundamental lavarse las manos,
+                            como antes
+                            de comer, después de ir al baño, después de toser o estornudar, y después de tocar
+                            superficies sucias.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End -->
+
+
+        <!--metodologia-->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4" style="color: black;font-family: 'Arial';">Metodología</h1>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+">
+                            <strong class="text-primary">Seccion Teórica:</strong> Se utilizará presentaciones e
+                            infografías para explicar la
+                            relevancia del lavado de manos.
+                        </p>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+">
+                            <strong class="text-primary">Demostraciones Prácticas:</strong> Se realizará demostraciones
+                            sobre la técnica correcta de
+                            lavado de manos.
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+">
+                            <strong class="text-primary">Metodología Mixta:</strong> Se combinará elementos teóricos y
+                            prácticos. Los teóricos
+                            proporcionan el conocimiento necesario, para ser aplicados en su vida diaria.
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+">
+                            <strong class="text-primary">Presentaciones Multimedia:</strong> Se utilizará un cuento
+                            explicativo que hable sobre la
+                            importancia y los pasos del lavado de manos en diversos contextos específicos.
+                        </p>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+">
+                            <strong class="text-primary">Uso de simulaciones:</strong>Se emplearán simulaciones para mostrar la distribución de
+                            gérmenes antes y después del lavado en cada contexto específico.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/metodologia.jpg"
+                                    alt="">
+                            
                         </div>
                     </div>
                 </div>
@@ -198,75 +326,10 @@
 
 
 
-       <!-- La Importancia del Lavado de Manos Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="pastel-background mb-4">
-                    <h2 class="mb-4">OBJETIVOS</h2>
-                    <p  style="text-align: justify;">
-                        Brindar información sobre la importancia del lavado de manos.
-                    </p>
-                    <p  style="text-align: justify;">
-                        Proporcionar instrucciones claras y demostraciones sobre la técnica adecuada de lavado de manos, reconociendo la importancia de cada paso para la eliminación de gérmenes.
-                    </p>
-                    <p  style="text-align: justify;">
-                        Resaltar los momentos clave en los que es fundamental lavarse las manos, como antes de comer, después de ir al baño, después de toser o estornudar, y después de tocar superficies sucias.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="image-container">
-                    <a href="pagina_contextos.html">
-                        <img src="img/manolimpias.jpg" alt="Guardianes de la Salud" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- La Importancia del Lavado de Manos End -->
-
-       <!-- Técnicas Correctas Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="image-container">
-                    <a href="pagina_tecnicas.html">
-                        <img src="img/metodologia.jpg" alt="Salud Bien Guardada" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="pastel-background mb-4">
-                    <h2 class="mb-4">Metodología</h2>
-                    <p  style="text-align: justify;">
-                        Secciones Teóricas: Se utilizará presentaciones e infografías para explicar la relevancia del lavado de manos.
-                    </p>
-                    <p style="text-align: justify;">
-                        Demostraciones Prácticas: Se realizará demostraciones sobre la técnica correcta de lavado de manos.
-                    </p>
-                    <p  style="text-align: justify;">
-                        Metodología mixta: Se combinará elementos teóricos y prácticos. Los teóricos proporcionan el conocimiento necesario, para ser aplicados en su vida diaria.
-                    </p>
-                    <p  style="text-align: justify;">
-                        Presentaciones Multimedia: Se utilizará un cuento explicativo que hable sobre la importancia y los pasos del lavado de manos en diversos contextos específicos.
-                    </p>
-                    <p  style="text-align: justify;">
-                        Uso de simulaciones: Se emplearán simulaciones para mostrar la distribución de gérmenes antes y después del lavado en cada contexto específico.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Técnicas Correctas End -->
-
         <!-- Frase -->
         <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h2 class="mb-4 text-center">"Recuerda que tener tus manos limpias y sanas es muy fácil y divertido."</h2>
+            <h2 class="mb-4 text-center">"Recuerda que tener tus manos limpias y sanas es muy fácil y divertido."
+            </h2>
         </div>
 
         <!-- Classes Start -->
@@ -280,7 +343,8 @@
                                 <img class="img-fluid rounded-circle" src="img/importanciaLM.jpg" alt="">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="impLManos.html">Importancia sobre el lavado de manos</a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="impLManos.html">Importancia sobre
+                                    el lavado de manos</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
 
@@ -320,7 +384,8 @@
                                 <img class="img-fluid rounded-circle" src="img/pasosCorrectosLM.jpg" alt="">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="tecnicaLManos.html">Pasos correctos para lavarse las manos</a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="tecnicaLManos.html">Pasos
+                                    correctos para lavarse las manos</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
 
@@ -357,7 +422,8 @@
                                 <img class="img-fluid rounded-circle" src="img/contextosLM1.jpg" alt="">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="contextosLManos.html">Lavarse las manos en diferentes contextos</a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="contextosLManos.html">Lavarse las
+                                    manos en diferentes contextos</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
 
@@ -416,7 +482,8 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Contáctanos</h3>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Direccion pendiente por confirmar</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Direccion pendiente por confirmar
+                        </p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Número perdiente por confirmar</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>correo@pentiente.com</p>
                         <div class="d-flex pt-2">
