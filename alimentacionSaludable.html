@@ -44,7 +44,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
         <a href="index.html" class="navbar-brand">
-            <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>CDI-MIESS</h1>
+            <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>CDI-MIES</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -99,43 +99,53 @@
         </div>
         <!-- Page Header End -->
 
-        <!-- Carrusel de Videos Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="row g-0 justify-content-center">
+                <div id="videoCarousel" class="carousel slide" data-bs-interval="25000" data-bs-ride="" style="max-width: 800px;" >
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="ratio ratio-16x9">
+                        <div class="carousel-item active ">
+                            <div  class="ratio ratio-16x9 " style="border: 15px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                                 <iframe class="embed-responsive-item"
-                                    src="https://www.youtube.com/embed/DimwlhuVKJc?si=VUcKqEnN2Bq05UOf"
-                                    allowfullscreen></iframe>
+                                    src="https://www.youtube.com/embed/DimwlhuVKJc?si=VUcKqEnN2Bq05UOf" frameborder="0"
+                                    allowfullscreen style="border: 5px solid #fbfbfc; border-radius: 15px;"></iframe>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="ratio ratio-16x9">
+                            <div class="ratio ratio-16x9" style="border: 15px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                                 <iframe class="embed-responsive-item"
-                                    src="https://www.youtube.com/embed/9fywVtJRW44?si=HcvInAPdCJaQ-5De"
-                                    allowfullscreen></iframe>
+                                    src="https://www.youtube.com/embed/9fywVtJRW44?si=HcvInAPdCJaQ-5De"frameborder="0"
+                                    allowfullscreen style="border: 5px solid #f7f9fc; border-radius: 15px;"></iframe>
                             </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-transparent rounded-circle" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                     </a>
                     <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-transparent rounded-circle" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                     </a>
+                    <ol class="carousel-indicators position-relative mt-3; padding:20px">
+                        <li data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active bg-primary" style="width: 25px; height: 25px; border-radius: 75%;">1</li>
+                        <li data-bs-target="#videoCarousel" data-bs-slide-to="1" class="bg-primary" style="width: 25px; height: 25px; border-radius: 75%;">2</li>
+                    </ol>
                 </div>
             </div>
         </div>
-        <!-- Carrusel de Videos End -->
 
-        <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h2 class="mb-4 text-center text-primary">“Tu cuerpo merece ser tratado con amor y respeto. Aliméntalo con 
-                nutrientes que lo fortalezcan y lo hagan brillar desde adentro hacia afuera”</h2>
+        
+        <div class="container mb-5 mt-5">
+            <div class="row g-2 justify-content-center">
+                <blockquote>
+                    “Tu cuerpo merece ser tratado con amor y respeto. Aliméntalo con 
+                    nutrientes que lo fortalezcan y lo hagan brillar desde adentro hacia afuera”
+                </blockquote>   
+            </div>
         </div>
+    
+
 
         <div class="container-fluid px-0 px-md-5 mb-5">
             <div class="row align-items-center px-3">
@@ -271,7 +281,7 @@
                                 <a href="alimBalanceada.html"><img class="img-fluid rounded-circle" src="img/LavadoManzanas8.jpg" alt=""></a>
                             </div>
                             <div class="rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="alimBalanceada.html">La higiene alimentaria en el hogar</a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="alimHigieneAlimentaria.html">La higiene alimentaria en el hogar</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
 
