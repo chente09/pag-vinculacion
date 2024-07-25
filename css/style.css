@@ -262,7 +262,7 @@ h6,
 
 .facility-item {
     background-color: #f8f9fa; /* Fondo claro para el estado normal */
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--primary);
     padding: 20px;
     transition: background-color 0.3s, color 0.3s;
     max-height: 400px; /* Establece una altura mínima */
@@ -273,15 +273,13 @@ h6,
 }
 
 .facility-item:hover {
-    background-color: var(--primary); /* Fondo oscuro para el estado hover */
-    color: var(--prueba2); /* Texto claro para el estado hover */
+    background-color: var(--dark); /* Fondo oscuro para el estado hover */
+    color: var(--dark); /* Texto claro para el estado hover */
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
-.more-info {
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #555;
+.temp-color {
+    color: var(--dark) 
 }
 
 .facility-item .facility-text h3, 
