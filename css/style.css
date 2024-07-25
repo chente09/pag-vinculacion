@@ -457,8 +457,18 @@ h6,
     background-size: cover;
 }
 .page-header-alimSAL {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/12_24_meses.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-header.jpg) center center no-repeat;
     background-size: cover;
+}
+.page-header-alim-bal{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-balanceada-header.jpg)  center no-repeat;
+    background-size: cover;
+}
+
+.page-header-alim-hg{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-higiene-header.jpg)  center no-repeat;
+    background-size: cover;
+}
 }
  
 .page-header-vse {
