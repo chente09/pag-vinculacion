@@ -20,11 +20,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
         rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -80,13 +83,15 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="recetas.html" class="nav-link dropdown-toggle" >Lonchera Saludable</a>
+                        <a href="recetas.html" class="nav-link dropdown-toggle">Lonchera Saludable</a>
                         <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                             <a href="recetas.html" class="dropdown-item"><i class="fas fa-utensils"></i> Recetas</a>
-                            <a href="https://issuu.com/nicoleg24/docs/loncheras_saludables-2_compressed" class="dropdown-item" target="_blank"><i class="fas fa-book-open"></i> Revista</a>
+                            <a href="https://issuu.com/nicoleg24/docs/loncheras_saludables-2_compressed"
+                                class="dropdown-item" target="_blank"><i class="fas fa-book-open"></i> Revista</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
+                    <a href="https://itsqmet.edu.ec/vinculacion-con-la-sociedad/" target="_blank"
+                        class="nav-item nav-link">Contáctanos</a>
                 </div>
             </div>
         </nav>
@@ -110,56 +115,72 @@
         </div>
         <!-- Page Header End -->
 
+       
+
         <!-- Carrusel de Videos Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="row g-0 justify-content-center">
+                <div id="videoCarousel" class="carousel slide" data-bs-interval="25000" data-bs-ride="" style="max-width: 800px;" >
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="ratio ratio-16x9">
+                        <div class="carousel-item active ">
+                            <div  class="ratio ratio-16x9 " style="border: 15px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                                 <iframe class="embed-responsive-item"
-                                    src="https://www.youtube.com/embed/HRdR4s2sCFQ?si=MUpH8I3o6lx3P8AI"
-                                    allowfullscreen></iframe>
+                                    src="https://www.youtube.com/embed/HRdR4s2sCFQ?si=MUpH8I3o6lx3P8AI" frameborder="0"
+                                    allowfullscreen style="border: 5px solid #fbfbfc; border-radius: 15px;"></iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9" style="border: 15px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/9l5ERD-luPo?si=o18YUjad_Xu0Qpki"frameborder="0"
+                                    allowfullscreen style="border: 5px solid #f7f9fc; border-radius: 15px;"></iframe>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="ratio ratio-16x9">
+                            <div class="ratio ratio-16x9" style="border: 15px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                                 <iframe class="embed-responsive-item"
-                                    src="https://www.youtube.com/embed/9l5ERD-luPo?si=o18YUjad_Xu0Qpki"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="ratio ratio-16x9">
-                                <iframe class="embed-responsive-item"
-                                    src="https://www.youtube.com/embed/J7rJlBi4A1I?si=glpaJypF_fUqWrzl"
-                                    allowfullscreen></iframe>
+                                    src="https://www.youtube.com/embed/J7rJlBi4A1I?si=glpaJypF_fUqWrzl"frameborder="0"
+                                    allowfullscreen style="border: 5px solid #f6f7f8; border-radius: 15px;"></iframe>
+                                
                             </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-transparent rounded-circle" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                     </a>
                     <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-transparent rounded-circle" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                     </a>
+                    <ol class="carousel-indicators position-relative mt-3; padding:20px">
+                        <li data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active bg-primary" style="width: 25px; height: 25px; border-radius: 75%;">1</li>
+                        <li data-bs-target="#videoCarousel" data-bs-slide-to="1" class="bg-primary" style="width: 25px; height: 25px; border-radius: 75%;">2</li>
+                        <li data-bs-target="#videoCarousel" data-bs-slide-to="2" class="bg-primary" style="width: 25px; height: 25px; border-radius: 75%;">3</li>
+                    </ol>
                 </div>
             </div>
         </div>
         <!-- Carrusel de Videos End -->
-        <!-- Frase -->
-        <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h2 class="mb-4 text-center">"La higiene alimentaria protege tu salud al garantizar alimentos seguros."</h2>
-        </div>
+
+
+
+       <!-- Frase -->
+    <div class="text-center mx-auto mb-4 wow fadeInUp " data-wow-delay="0.1s" style="font-size: 25px;padding-top: 50px;;
+    font-weight: bold;
+    font-family: 'Arial Black', sans-serif;">
+        <p style="color: black;">"La higiene alimentaria protege tu salud al garantizar alimentos seguros."</p>
+    </div>
         <!-- New Section for Higiene Alimentaria -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Introducción</h1>
-                        <p style="text-align: justify;">
+                        <h1 class="mb-4" style="color: black;font-family: 'Arial';">Introducción</h1>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    ">
                             <strong></strong> Una alimentación adecuada en la infancia es crucial para el desarrollo
                             físico y mental. Los padres deben asegurar prácticas de higiene alimentaria, como lavar
                             manos y alimentos, separar crudos de cocidos, y cocinar y refrigerar correctamente. Además,
@@ -208,19 +229,30 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Objetivos</h1>
-                        <p style="text-align: justify;">
-                            <strong>•</strong>Capacitar mediante prácticas efectivas de higiene alimentaria en el hogar
-                            para mejorar la salud de los niños y prevenir enfermedades.
+                        <h1 class="mb-4"style="color: black;font-family: 'Arial'">Objetivos</h1>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    ">
+                            <strong>•</strong>Capacitar mediante prácticas efectivas de higiene alimentaria en el hogar 
+                            para mejorar la salud y prevenir enfermedades. Este objetivo busca educar sobre la importancia 
+                            de mantener una higiene alimentaria adecuada en el hogar,
+                             reduciendo el riesgo de enfermedades transmitidas por alimentos. 
                         </p>
-                        <p style="text-align: justify;">
-                            <strong>•</strong>Brindar herramientas prácticas para implementar hábitos de higiene
-                            alimentaria en el hogar.
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    
+    ">
+                            <strong>•</strong>Brindar herramientas prácticas para implementar hábitos de higiene 
+                            alimentaria en el hogar. Este objetivo se centra en proporcionar recursos y guías detalladas para 
+                            facilitar la adopción de hábitos de higiene alimentaria. 
                         </p>
-                        <p style="text-align: justify;">
-                            <strong>•</strong>Fomentar el uso de recursos tecnológicos como apoyo para la educación
-                            alimentaria de los niños.
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    
+    ">
+                            <strong>•</strong>Fomentar el uso de recursos tecnológicos como apoyo para la educación alimentaria. 
+                            Este objetivo promueve el uso de aplicaciones y herramientas tecnológicas que faciliten
+                             la educación alimentaria de manera interactiva y accesible,
+                             mejorando la comprensión y la aplicación de prácticas alimentarias saludables. 
                         </p>
+                        
                     </div>
                 </div>
             </div>
@@ -232,27 +264,31 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Metodología</h1>
-                        <p style="text-align: justify;">
-                            <strong>Sección teórica:</strong> Se realizará una infografía para explicar el correcto
+                        <h1 class="mb-4" style="color: black;font-family: 'Arial';">Metodología</h1>
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    ">
+                            <strong class="text-primary">Sección teórica:</strong> Se realizará una infografía para explicar el correcto
                             lavado de alimentos (frutas y verduras) utilizando los pasos adecuados, incluyendo
                             ilustraciones y descripciones claras para facilitar la comprensión visual de los
                             procedimientos.
                         </p>
-                        <p style="text-align: justify;">
-                            <strong>Sección práctica:</strong> Se implementarán actividades prácticas donde los
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    ">
+                            <strong class="text-primary">Sección práctica:</strong> Se implementarán actividades prácticas donde los
                             participantes puedan ejecutar los conceptos teóricos sobre la higiene alimentaria, como el
                             lavado de frutas y verduras, el uso adecuado de utensilios y la correcta separación de
                             alimentos crudos y cocidos.
                         </p>
-                        <p style="text-align: justify;">
-                            <strong>Metodología mixta:</strong> Se utilizarán presentaciones teóricas y actividades
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    ">
+                            <strong class="text-primary">Metodología mixta:</strong> Se utilizarán presentaciones teóricas y actividades
                             prácticas que ayudarán a proporcionar el conocimiento necesario sobre el tema a los
                             participantes, asegurando que comprendan tanto la teoría como la aplicación práctica de las
                             buenas prácticas de higiene alimentaria.
                         </p>
-                        <p style="text-align: justify;">
-                            <strong>Sección interactiva:</strong> Se desarrollarán juegos interactivos y actividades
+                        <p style="text-align: justify;font-weight: bold;color: black;font-family: 'Arial'
+    ">
+                            <strong class="text-primary">Sección interactiva:</strong> Se desarrollarán juegos interactivos y actividades
                             donde todos los asistentes participen de manera activa, fomentando un aprendizaje lúdico y
                             colaborativo, y reforzando los conceptos aprendidos a través de dinámicas grupales y
                             competencias amigables.
@@ -282,7 +318,8 @@
         <!-- Classes Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <h1 class="mb-4 text-center">Actividades</h1>
+                <h1 class="mb-4 text-center">Actividades de higiene</h1>
+                <hr>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
@@ -290,7 +327,8 @@
                                 <img class="img-fluid rounded-circle" src="img/LavadoManzanas9.jpg" alt="">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="impHgAlim.html">Importancia de la
+                                <p class="d-block text-center" style="margin: 0;">Aprendamos más</p>
+                                <a class="d-block text-center h5 mt-3 mb-4" href="impHgAlim.html">Importancia de la
                                     higiene alimentaria</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
@@ -331,7 +369,8 @@
                                 <img class="img-fluid rounded-circle" src="img/LavadoManzanas8.jpg" alt="">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="impHgAlim2.html">La higiene
+                                <p class="d-block text-center" style="margin: 0;">Aprendamos más</p>
+                                <a class="d-block text-center h5 mt-3 mb-4" href="impHgAlim2.html">La higiene
                                     alimentaria en el hogar</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
@@ -369,7 +408,8 @@
                                 <img class="img-fluid rounded-circle" src="img/LavandoManzanas6.jpg" alt="">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="impHgAlim3.html">Recursos tecnológicos
+                                <p class="d-block text-center" style="margin: 0;">Aprendamos más</p>
+                                <a class="d-block text-center h5 mt-3 mb-4" href="impHgAlim3.html">Recursos tecnológicos
                                     en la educación alimentaria</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
@@ -405,15 +445,14 @@
         
         <div class="container-xxl py-5">
             <div class="container">
-                <h1 class="mb-4 text-center">Recomendación</h1>
-                <div class="bg-light rounded">
+                <h1 class="mb-4 text-center">Recomendaciones</h1>
+                <hr>
+                <div class="bg rounded">
                     <div class="row g-0 justify-content-center">
                         <div class="col-lg-8 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px; margin: 20px 0;">
-                            <div class="position-relative h-100" style="margin: 0 20px;">
-                                <iframe class="position-relative w-100 h-100 rounded"
-                                    src="https://www.youtube.com/embed/xS3COiQ0Oao?si=oH_n_XY57pVBXv0w" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen style="object-fit: cover;"></iframe>
+                            <div class="video-container" style="max-width: 750px; margin: 0 auto; padding: 0px; border: 10px solid #ccc; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                                <h2 class="text-primary"></h2>
+                                <iframe id="video" src="https://www.youtube.com/embed/xS3COiQ0Oao?si=oH_n_XY57pVBXv0w" frameborder="0" allowfullscreen style="width: 100%; height: 400px; border: 8px solid #fafbfc; border-radius: 15px;"></iframe>
                             </div>
                         </div>
                     </div>
@@ -421,6 +460,10 @@
             </div>
         </div>
         <!-- Call To Action End -->
+
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
