@@ -262,18 +262,24 @@ h6,
 
 .facility-item {
     background-color: #f8f9fa; /* Fondo claro para el estado normal */
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--primary);
     padding: 20px;
     transition: background-color 0.3s, color 0.3s;
     max-height: 400px; /* Establece una altura mínima */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .facility-item:hover {
-    background-color: var(--primary); /* Fondo oscuro para el estado hover */
-    color: var(--prueba2); /* Texto claro para el estado hover */
+    background-color: var(--dark); /* Fondo oscuro para el estado hover */
+    color: var(--dark); /* Texto claro para el estado hover */
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.temp-color {
+    color: var(--dark) 
 }
 
 .facility-item .facility-text h3, 
@@ -305,6 +311,144 @@ h6,
     background-color: transparent; /* Mantener fondo transparente en hover */
 }
 
+.change-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+/*** Service ***/
+.service-img-bg {
+    background-attachment: fixed; /* Fijar la imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen de fondo para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen de fondo */
+    position: relative; /* Asegurar que el contenedor es el referente para el pseudo-elemento */
+}
+
+.service-img-bg::before {
+    content: ""; /* Pseudo-elemento vacío */
+    position: absolute; /* Posicionarlo de manera absoluta dentro del contenedor */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente para opacar la imagen de fondo */
+    z-index: 1; /* Colocarlo detrás del contenido del contenedor */
+}
+
+.service-img-bg > * {
+    position: relative; /* Asegurar que el contenido del contenedor esté encima de la capa de opacidad */
+    z-index: 2;
+}
+.service-text {
+    background-size: cover; /* Ajusta la imagen para que cubra el área completa */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Ajusta el color del texto para que sea legible sobre la imagen de fondo */
+}
+
+/* Opcional: Añadir un fondo oscuro semi-transparente para mejorar la legibilidad del texto */
+.service-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: inherit; /* Mantiene las esquinas redondeadas */
+}
+
+.service-text > * {
+    position: relative;
+    z-index: 1;
+}
+.saber-mas-btn {
+    position: absolute;
+    bottom: 20px; /* Ajusta esta distancia según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-item {
+    position: relative;
+    text-align: center;
+}
+
+.service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: .3s;
+    z-index: -1;
+}
+
+.service-item:hover .service-img img {
+    transform: scale(1);
+}
+
+.service-item .service-text {
+    transition: .3s;
+}
+
+.service-item:hover .service-text {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.service-item .service-text h4,
+.service-item .service-text p {
+    transition: .3;
+}
+
+.service-item:hover .service-text h4 {
+    color: #FFFFFF;
+}
+
+.service-item:hover .service-text p {
+    color: var(--light);
+}
+
+.service-item .service-text .btn-square {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    transition: .5s;
+}
+
+.service-item:hover .service-text .btn-square {
+    background: var(--light);
+}
+
+.service-item .service-text .btn {
+    width: 31px;
+    height: 31px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--dark);
+    background: var(--light);
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.service-item:hover .service-text .btn {
+    width: 112px;
+}
+
+
 
 /* Fondos por página */
 
@@ -312,6 +456,25 @@ h6,
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Socialyemocional.jpg) center center no-repeat;
     background-size: cover;
 }
+.page-header-alimSAL {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-header.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-alim-bal{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-balanceada-header.jpg)  center no-repeat;
+    background-size: cover;
+}
+
+.page-header-alim-hg{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-higiene-header.jpg)  center no-repeat;
+    background-size: cover;
+}
+
+.page-header-alim-cn{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-nutritiva-header.jpg)  center no-repeat;
+    background-size: cover;
+}
+
  
 .page-header-vse {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Socialyemocional.jpg) center center no-repeat;
@@ -353,7 +516,7 @@ h6,
 }
 
 .page-header-hd {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/herramientasDidacticas.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(https://images.stockcake.com/public/8/4/6/846f8c57-f451-4c49-b7e4-0be8a5f1ce7e/preschool-circle-time-stockcake.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -363,7 +526,7 @@ h6,
 }
 
 .page-header-mnc {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Actividades12_24meses.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(https://images.stockcake.com/public/0/0/e/00e234d4-ee26-486d-8368-7e69916253ca_large/baby-meets-butterfly-stockcake.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -396,7 +559,6 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, .9);
     transition: .5s;
     z-index: 1;
 }
@@ -439,7 +601,6 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, .9);
     transition: .5s;
     z-index: 1;
 }
