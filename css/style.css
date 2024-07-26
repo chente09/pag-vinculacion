@@ -715,6 +715,12 @@ h6,
     background: var(--dark);
 }
 
+/*** Tarjetas de actividades ***/
+.activitiesCards{
+    background-color: #d6fffe;
+    /***#c1fffd*/
+}
+
 
 /*** Footer ***/
 .footer .btn.btn-social {
