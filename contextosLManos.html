@@ -183,18 +183,15 @@
                 <div class="container">
                     <div class="bg-light rounded">
                         <div class="row g-0">
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="h-100 d-flex flex-column justify-content-center p-5">
                                     <h1 class="mb-4">Actividad Evaluadora</h1>
-                                    <form
-                                        action="https://es.educaplay.com/recursos-educativos/19611887-tecnicas_del_lavado_de_manos.html"
-                                        target="_blank">
-                                        <p>Prueba tus conocimientos sobre el lavado de manos con este juego interactivo
-                                            en
-                                            Educaplay</p>
-                                        <button type="submit" class="btn btn-primary">Participar en la
-                                            Actividad</button>
-                                    </form>
+                                    <p>Prueba tus conocimientos sobre el lavado de manos con este juego interactivo en
+                                        Educaplay</p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#actividadModal">
+                                        Participar en la Actividad
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-lg-6 d-flex align-items-center wow fadeInRight" data-wow-delay="0.1s">
@@ -205,6 +202,30 @@
                 </div>
             </div>
             <!-- Appointment End -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="actividadModal" tabindex="-1" aria-labelledby="actividadModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="actividadModalLabel">Actividad Evaluadora</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe
+                                src="https://es.educaplay.com/recursos-educativos/19611887-tecnicas_del_lavado_de_manos.html"
+                                frameborder="0" style="width: 100%; height: 790px;"></iframe>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
 
 

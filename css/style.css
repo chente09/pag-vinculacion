@@ -470,6 +470,11 @@ h6,
     background-size: cover;
 }
 
+.page-header-alim-cn{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-nutritiva-header.jpg)  center no-repeat;
+    background-size: cover;
+}
+
  
 .page-header-vse {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Socialyemocional.jpg) center center no-repeat;
@@ -526,7 +531,7 @@ h6,
 }
 
 .page-header-hd {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/herramientasDidacticas.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(https://images.stockcake.com/public/8/4/6/846f8c57-f451-4c49-b7e4-0be8a5f1ce7e/preschool-circle-time-stockcake.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -536,7 +541,7 @@ h6,
 }
 
 .page-header-mnc {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Actividades12_24meses.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(https://images.stockcake.com/public/0/0/e/00e234d4-ee26-486d-8368-7e69916253ca_large/baby-meets-butterfly-stockcake.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -723,6 +728,12 @@ h6,
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
     background: var(--dark);
+}
+
+/*** Tarjetas de actividades ***/
+.activitiesCards{
+    background-color: #d6fffe;
+    /***#c1fffd*/
 }
 
 
