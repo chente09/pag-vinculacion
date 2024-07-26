@@ -505,6 +505,21 @@ h6,
     background-size: cover;
 }
 
+.page-header-lactancia {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/lactanciah1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-lactancia1 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/lactanciah2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-lactancia2 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/lactanciah3.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 .page-header-cf {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/consejeriaFam.jpg) center center no-repeat;
     background-size: cover;
@@ -1116,6 +1131,10 @@ cite {
 /* Opcional: Animación */
 .wow {
     animation: fadeIn ease 1s;
+}
+
+.justify{
+	text-align: justify;
 }
 
 @keyframes fadeIn {
