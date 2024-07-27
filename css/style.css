@@ -551,7 +551,7 @@ h6,
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    color: rgba(255, 255, 255, .5);
+    color: #6C757D;
 }
 
 
