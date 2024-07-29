@@ -177,6 +177,8 @@ h6,
 .page-header-mnc::after,
 .page-header-mnc2::before,
 .page-header-mnc2::after,
+.page-header-doc::before,
+.page-header-doc::after,
 .page-header::before,
 .page-header::after {
     position: absolute;
@@ -547,6 +549,11 @@ h6,
 
 .page-header-mnc2 {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Actividades24_36meses.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-doc{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/documentacion.jpg) center center no-repeat;
     background-size: cover;
 }
 
