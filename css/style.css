@@ -179,6 +179,8 @@ h6,
 .page-header-mnc2::after,
 .page-header-doc::before,
 .page-header-doc::after,
+.page-header-rev::before,
+.page-header-rev::after,
 .page-header::before,
 .page-header::after {
     position: absolute;
@@ -590,6 +592,11 @@ h6,
 
 .page-header-doc {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/documentacion.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-rev {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/LoncheraSaludable.jpeg) center center no-repeat;
     background-size: cover;
 }
 
