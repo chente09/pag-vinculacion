@@ -164,6 +164,7 @@ h6,
 }
 
 
+
 /*** Header ***/
 .header-carousel::before,
 .header-carousel::after,
@@ -1327,3 +1328,5 @@ cite {
 .details .fa-play {
     margin-left: 700px; /* Ajusta el margen según sea necesario */
 }
+
+

@@ -173,5 +173,10 @@ document.querySelectorAll('.change-img').forEach(img => {
         ]
     });
 
+
+
     
 })(jQuery);
+
+
+
