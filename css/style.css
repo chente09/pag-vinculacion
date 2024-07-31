@@ -119,6 +119,7 @@ h6,
 }
 
 .navbar .dropdown-toggle::after {
+    display: none;
     border: none;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
@@ -142,6 +143,9 @@ h6,
         margin-top: 15px;
         border-top: 1px solid #EEEEEE;
     }
+    .navbar .dropdown-toggle::after {
+        display: flex   ;
+    }
 }
 
 @media (min-width: 992px) {
@@ -160,6 +164,9 @@ h6,
         visibility: visible;
         transition: .5s;
         opacity: 1;
+    }
+    .navbar .dropdown-toggle::after {
+        display: flex   ;
     }
 }
 
