@@ -129,9 +129,6 @@ h6,
     transition: .5s;
 }
 
-.navbar .dropdown-toggle[aria-expanded=true]::after {
-    transform: rotate(-180deg);
-}
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link {
