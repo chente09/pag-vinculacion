@@ -1283,7 +1283,7 @@ cite {
     padding: 7px; 
     border-radius: 5px; 
     font-size: 13px; 
-    background-color: rgba(0, 0, 0, 0.8)
+    background-color: #EEEEEE
 }
 .page-header-playlist {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("https://images.stockcake.com/public/d/e/6/de681d49-bc26-44d7-838b-c1a98005e381_large/joyful-music-class-stockcake.jpg") center center no-repeat;
