@@ -4,37 +4,9 @@
  
  @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
 
- body{
-     color: #252c37;
-     font-family: 'Lato', sans-serif;
-     font-weight: 400;
-     -webkit-font-smoothing: antialiased;
- }
+
  
- h1,h2,h3,h4,h5,h6{
-     font-family: 'Lato', sans-serif;
-     font-weight: 700;
- }
- 
- p{
-     margin:0;
-     padding:0;
-     font-size: 14px;
-     line-height: 24px;
- }
- 
- a{
-     text-decoration: none;
- }
- 
- a:hover{
-     text-decoration: none;
- }
- 
- a:hover,a:active,a:focus {
-     outline: 0;
-     text-decoration: none;
- }
+
  
  hr{
  
@@ -51,17 +23,9 @@
  ::-moz-focus-inner {
      border:0;
  }
- .btn, .form-control,
- .form-control:focus {
-     border-radius: 0px !important;
-     box-shadow: none !important;
-     outline: none !important;
- }
+
  
- .btn-lg, .btn-group-lg > .btn {
-     padding: 12px 32px;
-     font-size: 18px;
- }
+
  
  
  .pad {padding: 130px 0px;}
