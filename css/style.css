@@ -1341,3 +1341,12 @@ cite {
 }
 
 
+.actmetolog {
+    display: flex;
+    justify-content: center; /* Centra el iframe horizontalmente */
+    align-items: center; /* Opcional: centra el iframe verticalmente si el contenedor tiene altura definida */
+    height: 100%; /* Asegura que el contenedor ocupe la altura completa del contenedor padre si es necesario */
+    margin: 0 auto; /* Opcional: centra el contenedor en su contenedor principal */
+}
+
+
