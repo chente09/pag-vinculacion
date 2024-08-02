@@ -3,10 +3,10 @@
     --primary: #26B8CE;
     --light: #FFF5F3;
     --dark: #103741;
-    --prueba1:#EB8B1D;
-    --prueba2:#26B8CE;
-    --prueba3:#A9C940;
-    --prueba4:#EA324E;
+    --prueba1: #EB8B1D;
+    --prueba2: #26B8CE;
+    --prueba3: #A9C940;
+    --prueba4: #EA324E;
 }
 
 .back-to-top {
@@ -119,6 +119,16 @@ h6,
 }
 
 .navbar .dropdown-toggle::after {
+    display: none;
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: .5s;
+}
+.navbar .dropdown-togglev::after {
     border: none;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
@@ -128,12 +138,8 @@ h6,
     transition: .5s;
 }
 
-.navbar .dropdown-toggle[aria-expanded=true]::after {
-    transform: rotate(-180deg);
-}
-
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -141,6 +147,12 @@ h6,
     .navbar .navbar-nav {
         margin-top: 15px;
         border-top: 1px solid #EEEEEE;
+    }
+    .navbar .dropdown-toggle::after {
+        display: flex;
+    }
+    .navbar .dropdown-togglev::after {
+        display: none;
     }
 }
 
@@ -152,7 +164,6 @@ h6,
         opacity: 0;
         visibility: hidden;
         transition: .5s;
-        
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -162,6 +173,7 @@ h6,
         opacity: 1;
     }
 }
+
 
 
 /*** Header ***/
@@ -177,6 +189,10 @@ h6,
 .page-header-mnc::after,
 .page-header-mnc2::before,
 .page-header-mnc2::after,
+.page-header-doc::before,
+.page-header-doc::after,
+.page-header-rev::before,
+.page-header-rev::after,
 .page-header::before,
 .page-header::after {
     position: absolute;
@@ -202,7 +218,7 @@ h6,
         position: relative;
         min-height: 500px;
     }
-    
+
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
@@ -211,7 +227,7 @@ h6,
     }
 
     .header-carousel .owl-carousel-item p {
-        font-size: 16px !important;
+        font-size: 20px !important;
         font-weight: 400 !important;
     }
 
@@ -224,9 +240,11 @@ h6,
 /***CARRUSEL****/
 
 .fixed-height {
-    height: 500px; /* Ajusta este valor según tus necesidades */
-    object-fit: cover; 
+    height: 500px;
+    /* Ajusta este valor según tus necesidades */
+    object-fit: cover;
 }
+
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
@@ -261,11 +279,13 @@ h6,
 /* Tarjetas Index */
 
 .facility-item {
-    background-color: #f8f9fa; /* Fondo claro para el estado normal */
+    background-color: #f8f9fa;
+    /* Fondo claro para el estado normal */
     border: 1px solid var(--primary);
     padding: 20px;
     transition: background-color 0.3s, color 0.3s;
-    max-height: 400px; /* Establece una altura mínima */
+    max-height: 400px;
+    /* Establece una altura mínima */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -273,42 +293,52 @@ h6,
 }
 
 .facility-item:hover {
-    background-color: var(--dark); /* Fondo oscuro para el estado hover */
-    color: var(--dark); /* Texto claro para el estado hover */
+    background-color: var(--dark);
+    /* Fondo oscuro para el estado hover */
+    color: var(--dark);
+    /* Texto claro para el estado hover */
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
+
 .temp-color {
-    color: var(--dark) 
+    color: var(--dark)
 }
 
-.facility-item .facility-text h3, 
+.facility-item .facility-text h3,
 .facility-item .facility-text p {
-    color: #000000; /* Texto oscuro para el estado normal */
+    color: #000000;
+    /* Texto oscuro para el estado normal */
     transition: color 0.3s;
 }
 
-.facility-item:hover .facility-text h3, 
+.facility-item:hover .facility-text h3,
 .facility-item:hover .facility-text p {
-    color: #ffffff; /* Texto claro para el estado hover */
+    color: #ffffff;
+    /* Texto claro para el estado hover */
 }
 
 .facility-icon {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.facility-icon.bg-info, .facility-icon.bg-success, .facility-icon.bg-warning {
-    background-color: transparent; /* Fondo transparente para el ícono */
+.facility-icon.bg-info,
+.facility-icon.bg-success,
+.facility-icon.bg-warning {
+    background-color: transparent;
+    /* Fondo transparente para el ícono */
 }
 
-.facility-icon.bg-info i, 
-.facility-icon.bg-success i, 
+.facility-icon.bg-info i,
+.facility-icon.bg-success i,
 .facility-icon.bg-warning i {
-    color: inherit; /* Heredar color del elemento padre */
+    color: inherit;
+    /* Heredar color del elemento padre */
 }
 
 .facility-item:hover .facility-icon {
-    background-color: transparent; /* Mantener fondo transparente en hover */
+    background-color: transparent;
+    /* Mantener fondo transparente en hover */
 }
 
 .change-img:hover {
@@ -316,35 +346,51 @@ h6,
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
+
 /*** Service ***/
 .service-img-bg {
-    background-attachment: fixed; /* Fijar la imagen de fondo */
-    background-repeat: no-repeat; /* No repetir la imagen de fondo */
-    background-size: cover; /* Ajustar la imagen de fondo para cubrir todo el contenedor */
-    background-position: center; /* Centrar la imagen de fondo */
-    position: relative; /* Asegurar que el contenedor es el referente para el pseudo-elemento */
+    background-attachment: fixed;
+    /* Fijar la imagen de fondo */
+    background-repeat: no-repeat;
+    /* No repetir la imagen de fondo */
+    background-size: cover;
+    /* Ajustar la imagen de fondo para cubrir todo el contenedor */
+    background-position: center;
+    /* Centrar la imagen de fondo */
+    position: relative;
+    /* Asegurar que el contenedor es el referente para el pseudo-elemento */
 }
 
 .service-img-bg::before {
-    content: ""; /* Pseudo-elemento vacío */
-    position: absolute; /* Posicionarlo de manera absoluta dentro del contenedor */
+    content: "";
+    /* Pseudo-elemento vacío */
+    position: absolute;
+    /* Posicionarlo de manera absoluta dentro del contenedor */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente para opacar la imagen de fondo */
-    z-index: 1; /* Colocarlo detrás del contenido del contenedor */
+    background: rgba(0, 0, 0, 0.2);
+    /* Capa negra semitransparente para opacar la imagen de fondo */
+    z-index: 1;
+    /* Colocarlo detrás del contenido del contenedor */
 }
 
-.service-img-bg > * {
-    position: relative; /* Asegurar que el contenido del contenedor esté encima de la capa de opacidad */
+.service-img-bg>* {
+    position: relative;
+    /* Asegurar que el contenido del contenedor esté encima de la capa de opacidad */
     z-index: 2;
 }
+
 .service-text {
-    background-size: cover; /* Ajusta la imagen para que cubra el área completa */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: white; /* Ajusta el color del texto para que sea legible sobre la imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra el área completa */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    color: white;
+    /* Ajusta el color del texto para que sea legible sobre la imagen de fondo */
 }
 
 /* Opcional: Añadir un fondo oscuro semi-transparente para mejorar la legibilidad del texto */
@@ -356,16 +402,19 @@ h6,
     right: 0;
     bottom: 0;
     z-index: 0;
-    border-radius: inherit; /* Mantiene las esquinas redondeadas */
+    border-radius: inherit;
+    /* Mantiene las esquinas redondeadas */
 }
 
-.service-text > * {
+.service-text>* {
     position: relative;
     z-index: 1;
 }
+
 .saber-mas-btn {
     position: absolute;
-    bottom: 20px; /* Ajusta esta distancia según tus necesidades */
+    bottom: 20px;
+    /* Ajusta esta distancia según tus necesidades */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -456,55 +505,58 @@ h6,
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Socialyemocional.jpg) center center no-repeat;
     background-size: cover;
 }
+
 .page-header-alimSAL {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-header.jpg) center center no-repeat;
     background-size: cover;
 }
-.page-header-alim-bal{
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-balanceada-header.jpg)  center no-repeat;
+
+.page-header-alim-bal {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-balanceada-header.jpg) center no-repeat;
     background-size: cover;
 }
 
-.page-header-alim-hg{
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-higiene-header.jpg)  center no-repeat;
+.page-header-alim-hg {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-higiene-header.jpg) center no-repeat;
     background-size: cover;
 }
 
-.page-header-alim-cn{
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-nutritiva-header.jpg)  center no-repeat;
+.page-header-alim-cn {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/alim-salu-nutritiva-header.jpg) center no-repeat;
     background-size: cover;
 }
 
- 
+
 .page-header-vse {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Socialyemocional.jpg) center center no-repeat;
     background-size: cover;
 }
- 
+
 .page-header-vincu1 {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/vincuSocial1.jpg) center center no-repeat;
     background-size: cover;
 }
- 
+
 .page-header-vincu2 {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/vincuSocial2.jpg) center center no-repeat;
     background-size: cover;
 }
- 
+
 .page-header-hga {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/higieneAlim1.jpg) center center no-repeat;
     background-size: cover;
 }
+
 .page-header-hgal {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Impohali.jpg) center center no-repeat;
     background-size: cover;
 }
- 
+
 .page-header-hgali {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/higieHogar.jpg) center center no-repeat;
     background-size: cover;
 }
- 
+
 .page-header-hgalim {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/recusrsostegno.jpg) center center no-repeat;
     background-size: cover;
@@ -550,7 +602,17 @@ h6,
     background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.page-header-doc {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/documentacion.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-rev {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/LoncheraSaludable.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
     color: #6C757D;
 }
 
@@ -731,7 +793,7 @@ h6,
 }
 
 /*** Tarjetas de actividades ***/
-.activitiesCards{
+.activitiesCards {
     background-color: #d6fffe;
     /***#c1fffd*/
 }
@@ -746,7 +808,7 @@ h6,
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 45px;
     transition: .3s;
 }
@@ -761,7 +823,7 @@ h6,
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -782,7 +844,7 @@ h6,
 }
 
 .footer .form-control {
-    border-color: rgba(255,255,255,0.5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer .copyright {
@@ -827,78 +889,111 @@ h6,
 
 /* Estilo general para la sección Información Clara */
 .info-clara-container {
-    background-color: #f0f8ff; /* Fondo de color claro para resaltar el contenido */
-    padding: 3rem 1.5rem; /* Espaciado generoso */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f0f8ff;
+    /* Fondo de color claro para resaltar el contenido */
+    padding: 3rem 1.5rem;
+    /* Espaciado generoso */
+    border-radius: 10px;
+    /* Bordes redondeados */
 }
 
 .info-clara-heading h2 {
-    color: #007BFF; /* Color de texto llamativo */
-    font-family: 'Arial', sans-serif; /* Tipografía clara y legible */
+    color: #007BFF;
+    /* Color de texto llamativo */
+    font-family: 'Arial', sans-serif;
+    /* Tipografía clara y legible */
     font-weight: bold;
 }
 
 .info-clara-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; /* Espaciado entre columnas */
+    gap: 2rem;
+    /* Espaciado entre columnas */
 }
 
 .info-clara-column {
     flex: 1;
-    min-width: 300px; /* Ancho mínimo de las columnas */
-    max-width: 500px; /* Ancho máximo de las columnas */
+    min-width: 300px;
+    /* Ancho mínimo de las columnas */
+    max-width: 500px;
+    /* Ancho máximo de las columnas */
 }
 
 .info-clara-image {
-    border: 4px solid #04aa6b; /* Borde llamativo alrededor de las imágenes */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para efectos de hover */
+    border: 4px solid #04aa6b;
+    /* Borde llamativo alrededor de las imágenes */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transición para efectos de hover */
 }
 
 .info-clara-image:hover {
-    transform: scale(1.05); /* Aumento de tamaño en hover */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más prominente en hover */
+    transform: scale(1.05);
+    /* Aumento de tamaño en hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra más prominente en hover */
 }
 
 .info-clara-text {
-    color: #333; /* Color de texto oscuro para buena legibilidad */
-    font-family: 'Arial', sans-serif; /* Tipografía clara y legible */
-    line-height: 1.6; /* Altura de línea para mejor lectura */
+    color: #333;
+    /* Color de texto oscuro para buena legibilidad */
+    font-family: 'Arial', sans-serif;
+    /* Tipografía clara y legible */
+    line-height: 1.6;
+    /* Altura de línea para mejor lectura */
 }
 
 .info-clara-list {
     list-style-type: disc;
-    margin-left: 1.5rem; /* Espaciado a la izquierda para la lista */
+    margin-left: 1.5rem;
+    /* Espaciado a la izquierda para la lista */
 }
 
 .info-clara-list li {
-    margin-bottom: 0.5rem; /* Espaciado entre los elementos de la lista */
+    margin-bottom: 0.5rem;
+    /* Espaciado entre los elementos de la lista */
 }
+
 /* Estilos para el contenedor de la imagen */
-.image-container, .la-importancia-image-container {
+.image-container,
+.la-importancia-image-container {
     position: relative;
     overflow: hidden;
-    border-radius: 15px; /* Redondea el contenedor de la imagen */
-    width: 100%; /* Ajusta el ancho del contenedor */
-    max-width: 300px; /* Tamaño máximo del contenedor */
-    height: auto; /* Altura automática basada en el ancho */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto de hover */
-    margin: auto; /* Centra el contenedor */
+    border-radius: 15px;
+    /* Redondea el contenedor de la imagen */
+    width: 100%;
+    /* Ajusta el ancho del contenedor */
+    max-width: 300px;
+    /* Tamaño máximo del contenedor */
+    height: auto;
+    /* Altura automática basada en el ancho */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra alrededor del contenedor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transición para el efecto de hover */
+    margin: auto;
+    /* Centra el contenedor */
 }
 
-.image-container:hover, .la-importancia-image-container:hover {
-    transform: scale(1.05); /* Aumento de tamaño en hover */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más prominente en hover */
+.image-container:hover,
+.la-importancia-image-container:hover {
+    transform: scale(1.05);
+    /* Aumento de tamaño en hover */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra más prominente en hover */
 }
 
-.image-container img, .la-importancia-image-container img {
+.image-container img,
+.la-importancia-image-container img {
     object-fit: cover;
     width: 100%;
     height: auto;
-    border-radius: 15px; /* Redondea la imagen */
-    transition: opacity 0.3s ease; /* Transición para la opacidad */
+    border-radius: 15px;
+    /* Redondea la imagen */
+    transition: opacity 0.3s ease;
+    /* Transición para la opacidad */
 }
 
 
@@ -911,106 +1006,116 @@ h6,
     align-items: center;
     padding: 50px;
     background-color: #f4f4f4;
-  }
+}
 
-  .video-container {
+.video-container {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
     padding: 20px;
-  }
+}
 
-  .video-container iframe {
+.video-container iframe {
     width: 100%;
     height: 315px;
     border-radius: 10px;
-  }
+}
 
-  .info-container {
+.info-container {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
     padding: 20px;
     text-align: left;
-  }
+}
 
-  .info-container h2 {
+.info-container h2 {
     font-size: 2em;
     margin-bottom: 10px;
-  }
+}
 
-  .info-container p {
+.info-container p {
     font-size: 1.2em;
     line-height: 1.6;
-  }
+}
 
-  .thumbnail-container {
+.thumbnail-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
+}
 
-  .thumbnail-container img {
+.thumbnail-container img {
     width: 100px;
     height: auto;
     margin: 0 10px;
     cursor: pointer;
     border-radius: 10px;
     transition: transform 0.3s;
-  }
+}
 
-  .thumbnail-container img:hover {
+.thumbnail-container img:hover {
     transform: scale(1.1);
-  }
+}
 
-  /*seccion video*/
+/*seccion video*/
 
 /*Cuestionario*/
 
 .quiz-section {
     text-align: center;
     padding: 50px;
-  }
-  .quiz-section form {
+}
+
+.quiz-section form {
     display: inline-block;
     text-align: left;
-  }
-  .quiz-section label, .quiz-section select {
+}
+
+.quiz-section label,
+.quiz-section select {
     display: block;
     margin: 10px 0;
-  }
+}
+
 /*Cuestionario*/
 
-  /*Preguntas Frecuentes*/
-  .faq-section {
+/*Preguntas Frecuentes*/
+.faq-section {
     padding: 50px;
     background-color: #e0f7fa;
-  }
-  .faq-section details {
+}
+
+.faq-section details {
     margin: 10px 0;
-  }
-  .faq-section summary {
+}
+
+.faq-section summary {
     font-size: 1.2em;
     cursor: pointer;
-  }
-  .faq-section p {
+}
+
+.faq-section p {
     margin: 0;
     padding: 10px;
     background-color: white;
     border: 1px solid #ccc;
-  }
-  /*Preguntas frecuentes*/
+}
 
-  /*Pasos*/
-  .info-section {
+/*Preguntas frecuentes*/
+
+/*Pasos*/
+.info-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     padding: 50px;
     background-color: #f9f9f9;
-  }
-  .steps-container, .video-container {
+}
+
+.steps-container,
+.video-container {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
@@ -1019,80 +1124,97 @@ h6,
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .steps-container h2, .video-container h2 {
+}
+
+.steps-container h2,
+.video-container h2 {
     font-size: 2em;
     margin-bottom: 10px;
     color: #333;
-  }
-  .steps-container ul {
+}
+
+.steps-container ul {
     list-style-type: decimal;
     padding-left: 20px;
-  }
-  .steps-container ul li {
+}
+
+.steps-container ul li {
     font-size: 1.2em;
     margin-bottom: 10px;
     line-height: 1.6;
-  }
-  .video-container iframe {
+}
+
+.video-container iframe {
     width: 100%;
     height: 315px;
     border-radius: 10px;
-  }
-  /*Pasos*/
+}
 
-  /*descargable*/
-  .download-section {
+/*Pasos*/
+
+/*descargable*/
+.download-section {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .download-section h2 {
+}
+
+.download-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
-  }
-  .download-list {
+}
+
+.download-list {
     list-style-type: none;
     padding: 0;
-  }
-  .download-list li {
+}
+
+.download-list li {
     margin-bottom: 10px;
-  }
-  .download-list a {
+}
+
+.download-list a {
     text-decoration: none;
     color: #1a73e8;
     font-size: 1.2em;
     transition: color 0.3s;
-  }
-  .download-list a:hover {
-    color: #0056b3;
-  }
-  /*descargable*/
+}
 
-  /*seccion impor*/
-  .img-fluid3s {
+.download-list a:hover {
+    color: #0056b3;
+}
+
+/*descargable*/
+
+/*seccion impor*/
+.img-fluid3s {
     width: 100%;
-    height: 200px; /* Tamaño fijo para todas las imágenes */
+    height: 200px;
+    /* Tamaño fijo para todas las imágenes */
     object-fit: cover;
     border-radius: 0.5rem;
 }
-  /*Mezcla*/
 
- /* Estilo para blockquote */
- blockquote {
+/*Mezcla*/
+
+/* Estilo para blockquote */
+blockquote {
     font-style: italic;
     color: #555;
     border-left: 5px solid #ccc;
     margin: 20px 0;
     padding: 10px 20px;
     background-color: #f9f9f9;
-    font-size: 1.25em; /* Tamaño de letra más grande */
-    font-weight: bold; /* Negrita */
-    text-align: justify; /* Texto justificado */
+    font-size: 1.25em;
+    /* Tamaño de letra más grande */
+    font-weight: bold;
+    /* Negrita */
+    text-align: justify;
+    /* Texto justificado */
 }
 
 /* Estilo para las citas */
@@ -1102,17 +1224,22 @@ blockquote cite {
     color: #888;
     font-style: normal;
     font-size: 0.9em;
-    font-weight: normal; /* Normal para que el nombre del autor no esté en negrita */
+    font-weight: normal;
+    /* Normal para que el nombre del autor no esté en negrita */
 }
 
 /* Estilo para q */
 q {
-    quotes: "“" "”" "‘" "’"; /* Agrega comillas tipográficas */
+    quotes: "“" "”" "‘" "’";
+    /* Agrega comillas tipográficas */
     font-style: italic;
     color: #333;
-    font-size: 1.25em; /* Tamaño de letra más grande */
-    font-weight: bold; /* Negrita */
-    text-align: justify; /* Texto justificado */
+    font-size: 1.25em;
+    /* Tamaño de letra más grande */
+    font-weight: bold;
+    /* Negrita */
+    text-align: justify;
+    /* Texto justificado */
 }
 
 /* Estilo para cite */
@@ -1120,23 +1247,34 @@ cite {
     font-weight: bold;
     font-style: normal;
     color: #555;
-    font-size: 1.25em; /* Tamaño de letra más grande */
+    font-size: 1.25em;
+    /* Tamaño de letra más grande */
 }
+
 /*pastel*/
 .pastel-background {
-    background-color: #f0f8ff; /* Fondo pastel azul claro */
-    border-radius: 8px; /* Bordes redondeados para los párrafos */
-    padding: 15px; /* Espaciado interno */
-    color: #004080; /* Color del texto */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    margin-bottom: 15px; /* Margen inferior entre párrafos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #f0f8ff;
+    /* Fondo pastel azul claro */
+    border-radius: 8px;
+    /* Bordes redondeados para los párrafos */
+    padding: 15px;
+    /* Espaciado interno */
+    color: #004080;
+    /* Color del texto */
+    line-height: 1.6;
+    /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 15px;
+    /* Margen inferior entre párrafos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
 }
 
 /* Opcional: Sombra para las imágenes */
 .img-fluid {
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la imagen */
+    border-radius: 10px;
+    /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra en la imagen */
 }
 
 /* Opcional: Animación */
@@ -1144,43 +1282,78 @@ cite {
     animation: fadeIn ease 1s;
 }
 
-.justify{
-	text-align: justify;
+.justify {
+    text-align: justify;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-  /*fin pastel*/
+
+/* PlayList */
+.rayito {
+    width: fit-content; 
+    padding: 7px; 
+    border-radius: 5px; 
+    font-size: 13px; 
+    background-color: #EEEEEE
+}
+.page-header-playlist {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("https://images.stockcake.com/public/d/e/6/de681d49-bc26-44d7-838b-c1a98005e381_large/joyful-music-class-stockcake.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.font-play {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.playlist {
+    list-style: none;
+    padding: 0;
+}
+.playlist li {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.playlist img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.playlist .details {
+    flex: 1;
+}
+.playlist .details h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.playlist .details p {
+    margin: 5px 0 0;
+    color: #666;
+}
+.details .fa-play {
+    margin-left: 700px; /* Ajusta el margen según sea necesario */
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.actmetolog {
+    display: flex;
+    justify-content: center; /* Centra el iframe horizontalmente */
+    align-items: center; /* Opcional: centra el iframe verticalmente si el contenedor tiene altura definida */
+    height: 100%; /* Asegura que el contenedor ocupe la altura completa del contenedor padre si es necesario */
+    margin: 0 auto; /* Opcional: centra el contenedor en su contenedor principal */
+}
 
 
