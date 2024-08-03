@@ -50,17 +50,18 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
         <a href="index.html" class="navbar-brand">
-            <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>CDI-MIESS</h1>
+            <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>CDI-MIES</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
-                <a href="index.html" class="nav-item nav-link ">Inicio</a>
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
                 <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
                 <div class="nav-item dropdown">
-                    <a href="concejFamily.html" class="nav-link dropdown-toggle">Consejería Familiar</a>
+                    <a href="concejFamily.html" class="nav-link dropdown-t dropdown-togglev">Consejería Familiar</a>
+                    <a href="" class="dropdown-toggle" data-bs-toggle="dropdown"></a>
                     <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                         <a href="hgAlim.html" class="dropdown-item">Higiene Alimentaria</a>
                         <a href="lactMaterna.html" class="dropdown-item">Lactancia Materna</a>
@@ -69,7 +70,8 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="herraMetodo.html" class="nav-link dropdown-toggle">Herramientas Metodológicas</a>
+                    <a href="herraMetodo.html" class="nav-link dropdown-t dropdown-togglev">Herramientas Metodológicas</a>
+                    <a href="" class="dropdown-toggle" data-bs-toggle="dropdown"></a>
                     <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                         <a href="VincSocyEmoc.html" class="dropdown-item">Vinculación Emocional y Social </a>
                         <a href="medioNaturalCultural.html" class="dropdown-item">Descubrimiento del Medio Natural y
@@ -80,15 +82,18 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="recetas.html" class="nav-link dropdown-toggle">Biblioteca</a>
+                    <a href="" class="nav-link dropdown-t dropdown-togglev active">Biblioteca</a>
+                    <a href="" class="dropdown-toggle" data-bs-toggle="dropdown"></a>
                     <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                        <a href="recetas.html" class="dropdown-item"><i class="fas fa-utensils"></i> Recetas</a>
+                        <a href="recetas.html" class="dropdown-item active"><i class="fas fa-utensils"></i> Recetas</a>
                         <a href="https://issuu.com/nicoleg24/docs/loncheras_saludables-2_compressed"
                             class="dropdown-item" target="_blank"><i class="fas fa-book-open"></i> Revista</a>
-                        <a href="musica2.html" class="dropdown-item" target="_blank"><i
-                                class="fas fa-music"></i> Playlist Infantil</a>
+                        <a href="musica2.html" class="dropdown-item"><i class="fas fa-music"></i>
+                            Playlist Infantil</a>
                         <a href="https://shande25.github.io/ALfinLaw/" class="dropdown-item" target="_blank"><i
                                 class="fas fa-baby"></i> WasiGuagua</a>
+                        <a href="docsMIESS.html" class="dropdown-item">
+                            <i class="fas fa-file-alt"></i> Documentación</a>
                     </div>
                 </div>
                 <a href="https://itsqmet.edu.ec/vinculacion-con-la-sociedad/" target="_blank"
@@ -99,22 +104,23 @@
     <!-- Navbar End -->
 
 
-        <!-- Page Header End -->
-        <div class="container-xxl py-5 page-header position-relative mb-5">
-            <div class="container py-5">
-                <h1 class="display-2 text-white animated slideInDown mb-4">Canciones infantiles</h1>
-                <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                    <nav aria-label="breadcrumb animated slideInDown">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Playlist Infantil
-                            </li>
-                        </ol>
-                    </nav>
-                </p>
-            </div>
-        </div>
-        <!-- Page Header End -->
+ <!-- Page Header End -->
+ <div class="container-xxl py-5 page-header position-relative mb-5">
+    <div class="container py-5">
+        <h1 class="display-2 text-white animated slideInDown mb-4">Canciones infantiles</h1>
+        <p class="fs-5 fw-medium text-white mb-4 pb-2">
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb rayito">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Biblioteca</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Playlist Infantil
+                    </li>
+                </ol>
+            </nav>
+        </p>
+    </div>
+</div>
+<!-- Page Header End -->
 
         			<!-- Hero block area -->
 			<div id="latestalbum" class="hero pad">
@@ -138,12 +144,12 @@
 											<div class="song-info">
 												<!-- song title -->
 												<h4>Si Estás Feliz</h4>
-												<p><strong>Album</strong>: Idk &nbsp;|&nbsp; <strong>Type</strong>: Rock clasico &nbsp;|&nbsp; <strong>Singer</strong>: Idk</p>
 											</div>
 											<!-- music icon -->
 											<div class="music-icon">
 												<a href="#" id="playNowBtn1"><i class="fa fa-play"></i>&nbsp;</a>
 												<a href="#" id="pauseNowBtn1"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                <a href="#" id="downloadBtn1"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -158,6 +164,7 @@
 											<div class="music-icon">
 												<a href="#" id="playNowBtn2"><i class="fa fa-play"></i>&nbsp;</a>
 												<a href="#" id="pauseNowBtn2"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                <a href="#" id="downloadBtn2"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -171,6 +178,7 @@
 											<div class="music-icon">
 												<a href="#" id="playNowBtn3"><i class="fa fa-play"></i>&nbsp;</a>
 												<a href="#" id="pauseNowBtn3"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                <a href="#" id="downloadBtn3"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -184,6 +192,7 @@
 											<div class="music-icon">
 												<a href="#" id="playNowBtn4"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn4"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn4"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -197,6 +206,7 @@
 											<div class="music-icon">
 												<a href="#" id="playNowBtn5"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn5"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn5"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -210,6 +220,7 @@
 											<div class="music-icon">
                                                 <a href="#" id="playNowBtn6"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn6"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn6"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -223,6 +234,7 @@
 											<div class="music-icon">
                                                 <a href="#" id="playNowBtn7"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn7"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn7"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -236,6 +248,7 @@
 											<div class="music-icon">
                                                 <a href="#" id="playNowBtn8"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn8"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn8"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -249,6 +262,7 @@
 											<div class="music-icon">
                                                 <a href="#" id="playNowBtn9"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn9"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn9"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -263,6 +277,7 @@
 												<div class="music-icon">
                                                     <a href="#" id="playNowBtn10"><i class="fa fa-play"></i></a>
                                                     <a href="#" id="pauseNowBtn10"><i class="fa fa-pause"></i></a>
+                                                    <a href="#" id="downloadBtn10"><i class="fa fa-download"></i>&nbsp;</a>
                                                 </div>
 											</div>
 											<div class="clearfix"></div>
@@ -278,6 +293,8 @@
                                                 <div class="music-icon">
                                                     <a href="#" id="playNowBtn11"><i class="fa fa-play"></i></a>
                                                     <a href="#" id="pauseNowBtn11"><i class="fa fa-pause"></i></a>
+                                                    <a href="#" id="downloadBtn11"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                 </div>
 											</div>
 											<div class="clearfix"></div>
@@ -293,6 +310,7 @@
 												<div class="music-icon">
                                                     <a href="#" id="playNowBtn12"><i class="fa fa-play"></i></a>
                                                     <a href="#" id="pauseNowBtn12"><i class="fa fa-pause"></i></a>
+                                                    <a href="#" id="downloadBtn12"><i class="fa fa-download"></i>&nbsp;</a>
                                                 </div>
 											</div>
 											<div class="clearfix"></div>
@@ -333,12 +351,12 @@
 											<div class="song-info">
 												<!-- song title -->
 												<h4>Emociones y Sentimientos</h4>
-												<p><strong>Album</strong>: Idk &nbsp;|&nbsp; <strong>Type</strong>: Rock clasico &nbsp;|&nbsp; <strong>Singer</strong>: Idk</p>
-											</div>
+                                            </div>
 											<!-- music icon -->
 											<div class="music-icon">
 												<a href="#" id="playNowBtn13"><i class="fa fa-play"></i>&nbsp;</a>
 												<a href="#" id="pauseNowBtn13"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                <a href="#" id="downloadBtn13"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -353,6 +371,7 @@
 											<div class="music-icon">
 												<a href="#" id="playNowBtn14"><i class="fa fa-play"></i>&nbsp;</a>
 												<a href="#" id="pauseNowBtn14"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                <a href="#" id="downloadBtn14"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -366,6 +385,7 @@
 											<div class="music-icon">
 												<a href="#" id="playNowBtn15"><i class="fa fa-play"></i>&nbsp;</a>
 												<a href="#" id="pauseNowBtn15"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                <a href="#" id="downloadBtn15"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -379,6 +399,7 @@
 											<div class="music-icon">
 												<a href="#" id="playNowBtn16"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn16"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn16"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -392,6 +413,7 @@
 											<div class="music-icon">
 												<a href="#" id="playNowBtn17"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn17"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn17"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -405,6 +427,7 @@
 											<div class="music-icon">
                                                 <a href="#" id="playNowBtn18"><i class="fa fa-play"></i></a>
 												<a href="#" id="pauseNowBtn18"><i class="fa fa-pause"></i></a>
+                                                <a href="#" id="downloadBtn18"><i class="fa fa-download"></i>&nbsp;</a>
 											</div>
 											<div class="clearfix"></div>
 										</li>
@@ -444,12 +467,12 @@
                                                             <div class="song-info">
                                                                 <!-- song title -->
                                                                 <h4>Esto es la naturaleza</h4>
-                                                                <p><strong>Album</strong>: Idk &nbsp;|&nbsp; <strong>Type</strong>: Rock clasico &nbsp;|&nbsp; <strong>Singer</strong>: Idk</p>
                                                             </div>
                                                             <!-- music icon -->
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn19"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn19"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn19"><i class="fa fa-download"></i>&nbsp;</a>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -464,6 +487,7 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn20"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn20"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn20"><i class="fa fa-download"></i>&nbsp;</a>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -477,6 +501,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn21"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn21"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn21"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -490,6 +516,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn22"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn22"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn22"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -503,6 +531,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn23"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn23"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn23"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -516,6 +546,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn24"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn24"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn24"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -529,6 +561,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn25"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn25"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn25"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -570,12 +604,13 @@
                                                             <div class="song-info">
                                                                 <!-- song title -->
                                                                 <h4>La canción del gusanito funciona</h4>
-                                                                <p><strong>Album</strong>: Idk &nbsp;|&nbsp; <strong>Type</strong>: Rock clasico &nbsp;|&nbsp; <strong>Singer</strong>: Idk</p>
                                                             </div>
                                                             <!-- music icon -->
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn26"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn26"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn26"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -590,6 +625,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn27"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn27"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn27"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -603,6 +640,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn28"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn28"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn28"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -616,6 +655,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn29"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn29"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn29"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -629,6 +670,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn30"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn30"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn30"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -642,6 +685,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn31"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn31"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn31"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -680,12 +725,13 @@
                                                             <div class="song-info">
                                                                 <!-- song title -->
                                                                 <h4>Escucha y hazlo</h4>
-                                                                <p><strong>Album</strong>: Idk &nbsp;|&nbsp; <strong>Type</strong>: Rock clasico &nbsp;|&nbsp; <strong>Singer</strong>: Idk</p>
                                                             </div>
                                                             <!-- music icon -->
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn32"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn32"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn32"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -700,6 +746,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn33"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn33"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn33"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -713,6 +761,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn34"><i class="fa fa-play"></i>&nbsp;</a>
                                                                 <a href="#" id="pauseNowBtn34"><i class="fa fa-pause"></i>&nbsp;</a>
+                                                                <a href="#" id="downloadBtn34"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -726,6 +776,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn35"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn35"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn35"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -739,6 +791,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn36"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn36"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn36"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -752,6 +806,8 @@
                                                             <div class="music-icon">
                                                                 <a href="#" id="playNowBtn37"><i class="fa fa-play"></i></a>
                                                                 <a href="#" id="pauseNowBtn37"><i class="fa fa-pause"></i></a>
+                                                                <a href="#" id="downloadBtn37"><i class="fa fa-download"></i>&nbsp;</a>
+
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </li>
@@ -769,85 +825,77 @@
 
                             
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Contáctanos</h3>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Direccion pendiente por confirmar</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Número perdiente por confirmar</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>correo@pentiente.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Síguenos</h3>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social"
+                        href="https://youtube.com/@vinculacionitsqmet?si=Jn7aHV9-tzaO4QBu" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Enlaces Rápidos</h3>
+                <a class="btn btn-link text-white-50" href="index.html">Inicio</a>
+                <a class="btn btn-link text-white-50" href="nosotros.html">Nosotros</a>
+                <a class="btn btn-link text-white-50" href="concejFamily.html">Concejeria Familiar</a>
+                <a class="btn btn-link text-white-50" href="herraMetodo.html">Herramientas Didacticas</a>
+                <a class="btn btn-link text-white-50" href="recetas.html">Recetas</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Galería de Imágenes</h3>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1"
+                            src="img/1. Conociendo el mundo de los animales.jpg" alt="">
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Enlaces Rápidos</h3>
-                        <a class="btn btn-link text-white-50" href="index.html">Inicio</a>
-                        <a class="btn btn-link text-white-50" href="#">Nosotros</a>
-                        <a class="btn btn-link text-white-50" href="concejFamily.html">Concejeria Familiar</a>
-                        <a class="btn btn-link text-white-50" href="herraMetodo.html">Herramientas Didacticas</a>
-                        <a class="btn btn-link text-white-50" href="">Biblioteca</a>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/2. Jardín sensorial.jpg" alt="">
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Galería de Imágenes</h3>
-                        <div class="row g-2 pt-2">
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
-                            </div>
-                        </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/tites dedos.jpg" alt="">
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Comentarios</h3>
-                        <p>Deja tus comentarios, envíanos tus recomendaciones por correo electrónico.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Escríbenos">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
-                        </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/3. Noción grande-pequeño.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/4. Teatro de sombras.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/guardianesalud.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Desarrolladores Vesp</a>, Derechos reservados. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Diseñado por: <a class="border-bottom" href="#">Estudiantes ITSQMET</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="#">Inicio</a>
-                                <a href="#">Cookies</a>
-                                <a href="#">Ayuda</a>
-                                <a href="#">Contacto</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Comentarios</h3>
+                <p>Deja tus comentarios, envíanos tus recomendaciones por correo electrónico.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                        placeholder="Escríbenos">
+                    <button type="button"
+                        class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 mb-md-0">
+                    &copy; <a class="border-bottom">2024</a>. Todos los derechos reservados.
+                    Desarrollado por: <a class="border-bottom" href="https://itsqmet.edu.ec/"
+                        target="_blank">Estudiantes ITSQMET</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
