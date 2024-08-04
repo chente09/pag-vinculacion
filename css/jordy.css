@@ -28,29 +28,11 @@
  }
  
  .hero-playlist .figure {
-     position: relative;
-     max-width: 450px;
-     margin: 0 auto;
-     text-align: right;
- }
- 
-
- .img1-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto; /* Esto centra la imagen horizontalmente */
-
-
-  }
-  .img1 {
-    vertical-align: middle;
-    border: 0;
-  }
-  .img1 {
-    margin-left: 100px; /* Aumenta este valor para mover la imagen más a la derecha */
-    float: right;
+	position: relative;
+	max-width: 450px;
+	margin: 0 auto;
 }
+ 
 
 
 
@@ -63,7 +45,7 @@
      margin-top: -100px;
      margin-left: -100px;
      opacity: 0.5;
-     text-align: right;
+     
  }
  
  .hero-playlist .album-details {
@@ -101,6 +83,8 @@
      background: #fafafa;
      border: 1px solid #ddd;
  }
+ 
+
  
  .playlist-content .playlist-number .song-info {
      float: left;	
