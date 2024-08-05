@@ -58,7 +58,7 @@
  }
  
  .hero-playlist .album-details h4 {
-     font-size: 22px;
+     font-size: 50px;
      line-height: 32px;
      text-transform: uppercase;
  }
@@ -84,6 +84,20 @@
      border: 1px solid #ddd;
  }
  
+
+
+ .song-info {
+    display: flex;
+    align-items: center;
+}
+
+.song-thumbnail {
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin-right: 10px; /* Ajusta el margen según tus necesidades */
+    border-radius: 50%; /* Esto hará que la imagen sea completamente circular */
+
+}
 
  
  .playlist-content .playlist-number .song-info {

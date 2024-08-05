@@ -13,6 +13,7 @@ $(document).ready(function() {
     $('#playNowBtn1').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -60,6 +61,7 @@ $(document).ready(function() {
     $('#playNowBtn2').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -115,6 +117,7 @@ $(document).ready(function() {
     $('#playNowBtn3').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -219,6 +222,7 @@ $(document).ready(function() {
     $('#playNowBtn5').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -271,6 +275,7 @@ $(document).ready(function() {
     $('#playNowBtn6').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -322,6 +327,7 @@ $(document).ready(function() {
     $('#playNowBtn7').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -372,6 +378,7 @@ $(document).ready(function() {
     $('#playNowBtn8').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -422,6 +429,7 @@ $(document).ready(function() {
     $('#playNowBtn9').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -472,6 +480,7 @@ $(document).ready(function() {
     $('#playNowBtn10').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -522,6 +531,7 @@ $(document).ready(function() {
     $('#playNowBtn11').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -572,6 +582,7 @@ $(document).ready(function() {
     $('#playNowBtn12').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -622,6 +633,7 @@ $(document).ready(function() {
     $('#playNowBtn13').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -672,6 +684,7 @@ $(document).ready(function() {
     $('#playNowBtn14').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -723,6 +736,7 @@ $(document).ready(function() {
     $('#playNowBtn15').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -774,6 +788,7 @@ $(document).ready(function() {
     $('#playNowBtn16').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -825,6 +840,7 @@ $(document).ready(function() {
     $('#playNowBtn17').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -876,6 +892,7 @@ $(document).ready(function() {
     $('#playNowBtn18').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -927,6 +944,7 @@ $(document).ready(function() {
     $('#playNowBtn19').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -978,6 +996,7 @@ $(document).ready(function() {
     $('#playNowBtn20').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1029,7 +1048,8 @@ $(document).ready(function() {
 
     $('#playNowBtn21').click(function(e) {
         if (currentPlaying) {
-            currentPlaying.pause(); 
+            currentPlaying.pause();
+            currentPlaying.currentTime = 0; 
         }
         currentPlaying = obj; 
         obj.play();
@@ -1083,6 +1103,7 @@ $(document).ready(function() {
     $('#playNowBtn22').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1133,6 +1154,7 @@ $(document).ready(function() {
     $('#playNowBtn23').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1184,6 +1206,7 @@ $(document).ready(function() {
     $('#playNowBtn24').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1235,6 +1258,7 @@ $(document).ready(function() {
     $('#playNowBtn25').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1286,6 +1310,7 @@ $(document).ready(function() {
     $('#playNowBtn26').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1337,6 +1362,7 @@ $(document).ready(function() {
     $('#playNowBtn27').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1389,6 +1415,7 @@ $(document).ready(function() {
     $('#playNowBtn28').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1442,6 +1469,7 @@ $(document).ready(function() {
     $('#playNowBtn29').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1494,6 +1522,7 @@ $(document).ready(function() {
     $('#playNowBtn30').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1545,6 +1574,7 @@ $(document).ready(function() {
     $('#playNowBtn31').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1598,6 +1628,7 @@ $(document).ready(function() {
     $('#playNowBtn32').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1651,6 +1682,7 @@ $(document).ready(function() {
     $('#playNowBtn33').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1703,6 +1735,7 @@ $(document).ready(function() {
     $('#playNowBtn34').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1755,6 +1788,7 @@ $(document).ready(function() {
     $('#playNowBtn35').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1808,6 +1842,7 @@ $(document).ready(function() {
     $('#playNowBtn36').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
@@ -1861,6 +1896,7 @@ $(document).ready(function() {
     $('#playNowBtn37').click(function(e) {
         if (currentPlaying) {
             currentPlaying.pause(); 
+            currentPlaying.currentTime = 0;
         }
         currentPlaying = obj; 
         obj.play();
