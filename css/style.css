@@ -794,7 +794,11 @@ h6,
 
 /*** Tarjetas de actividades ***/
 .activitiesCards {
-    background-color: #d6fffe;
+    background-color: #c7978b;
+    /***#c1fffd*/
+}
+.activitiesCards2 {
+    background-color: #c1fffd;
     /***#c1fffd*/
 }
 
