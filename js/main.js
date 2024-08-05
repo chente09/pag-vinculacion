@@ -172,9 +172,6 @@ document.querySelectorAll('.change-img').forEach(img => {
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-
-
-
     
 })(jQuery);
 
