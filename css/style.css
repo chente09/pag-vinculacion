@@ -194,7 +194,7 @@ h6,
 .page-header-rev::before,
 .page-header-rev::after,
 .page-header::before,
-.page-header::after {
+.page-header::after { 
     position: absolute;
     content: "";
     width: 100%;
@@ -206,7 +206,7 @@ h6,
 }
 
 .header-carousel::after,
-.page-header::after {
+.page-header::after { 
     height: 19px;
     top: auto;
     bottom: 0;
